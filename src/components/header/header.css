@@ -1,0 +1,8 @@
+/* styles.css (or any other CSS file) */
+.custom-container {
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 0 15px; /* Optional padding on the sides */
+  }
+  
