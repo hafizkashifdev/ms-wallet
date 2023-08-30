@@ -1,0 +1,24 @@
+.bg-image-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 521px;
+height: 521px;
+flex-shrink: 0;
+    border-radius: 521px;
+opacity: 0.2;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-image-bottom-right {
+    position: absolute;
+    border-radius: 403px;
+opacity: 0.2;
+/* background: var('--untitled-others-orange-orange-500', #FB6514); */
+top: 202px;
+    left: 252px;
+flex-shrink: 0;
+   
+  }
+  
