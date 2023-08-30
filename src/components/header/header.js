@@ -39,9 +39,9 @@ const Header = () => {
     <React.Fragment>
        {/* <div className="custom-container"> */}
        
-      <AppBar sx={{ background: "white",pt:1 ,pb:1}}>
-      <Container maxWidth="xxl">
-        <Toolbar>
+      <AppBar sx={{ background: "white",pt:1 ,pb:1,opacity:'1'}}>
+      <Container maxWidth="xxl" sx={{border:'border 1 px solid black'}}>
+        <Toolbar >
         <img
                   src={logo}
                   alt="logo"
