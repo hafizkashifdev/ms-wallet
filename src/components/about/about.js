@@ -254,7 +254,7 @@ export const About = () => {
   </Typography>
 </Grid>
 
-<Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 20 }}>
+<Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 20 ,mb:10}}>
   <div style={{ backgroundColor: '#796EFF', padding: '64px 80px', width: '100%', display: 'flex',maxWidth: '1000px', alignItems: 'center' ,borderRadius:'16px'}}>
     <Typography
       variant="h6"
