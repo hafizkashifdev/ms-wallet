@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import {
+  Box,
+  Button,
   Drawer,
   IconButton,
   List,
@@ -44,8 +46,7 @@ const DrawerComp = () => {
         }}
       >
         <List>
-         
-          {/* Menu items */}
+  
           {pages.map((page, index) => (
             <ListItemButton key={index}>
               <ListItemIcon>
@@ -60,7 +61,45 @@ const DrawerComp = () => {
               </ListItemIcon>
             </ListItemButton>
           ))}
+
         </List>
+        <Box sx={{ display:'flex',justifyContent:'center',flexDirection:'column' ,p:6}}>
+  <Button
+    sx={{
+      backgroundColor: '#8155FF',
+      color: '#ffffff',
+      borderRadius: '8px',
+      fontSize:'16px',
+      padding:'13px 36px',
+      fontWeight:600,
+      fontFamily:'Open Sans',
+      textTransform:'capitalize',
+      boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+      height:'48px',
+      '&:hover': {
+        backgroundColor: '#6d43e2', 
+      },
+    }}
+  >
+    Sign Up
+  </Button>
+  <Button
+    sx={{
+      color: '#2F2F2F',
+      fontSize:'16px',
+      fontWeight:500,
+      fontFamily:'Outfit',
+      textTransform:'capitalize',
+      mt:2,
+      '&:hover': {
+        color: '#8155FF', 
+        backgroundColor: 'transparent',
+      },
+    }}
+  >
+    Login
+  </Button>
+</Box>
       </Drawer>
       <IconButton
         sx={{ color: "black", marginLeft: "auto" }}

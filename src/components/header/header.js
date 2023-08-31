@@ -37,10 +37,10 @@ const Header = () => {
 
   return (
     <React.Fragment>
-       {/* <div className="custom-container"> */}
+     
        
-      <AppBar sx={{ background: "white",pt:1 ,pb:1,opacity:'1'}}>
-      <Container maxWidth="xxl" sx={{border:'border 1 px solid black'}}>
+      <AppBar sx={{ background: "#FFF",opacity:'1',px:{md:'80px',xxl:'120px',sm:4},py:'10px'}}>
+    
         <Toolbar >
         <img
                   src={logo}
@@ -65,9 +65,9 @@ const Header = () => {
         <Tab
           key={index}
           label={
-            <Box className="tabLabel"> {/* Apply CSS for the hover effect */}
+            <Box className="tabLabel">
               <span
-                className="tabTitle" // Apply CSS class for title styles
+                className="tabTitle"
               >
                 {page.title}
               </span>
@@ -75,7 +75,7 @@ const Header = () => {
                 <img
                   src={dropdown}
                   alt="Dropdown"
-                  className="dropdownIcon" // Apply the CSS class
+                  className="dropdownIcon"
                 />
               )}
             </Box>
@@ -97,7 +97,7 @@ const Header = () => {
       boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
       height:'48px',
       '&:hover': {
-        backgroundColor: '#6d43e2', // Change the hover background color here
+        backgroundColor: '#6d43e2', 
       },
     }}
   >
@@ -109,10 +109,11 @@ const Header = () => {
       fontSize:'16px',
       fontWeight:500,
       fontFamily:'Outfit',
+
       textTransform:'capitalize',
       ml:2,
       '&:hover': {
-        color: '#8155FF', // Change the hover color here
+        color: '#8155FF', 
         backgroundColor: 'transparent',
       },
     }}
@@ -124,11 +125,11 @@ const Header = () => {
             </>
           )}
         </Toolbar>
-        </Container>
+      
       </AppBar>
       
    
-    {/* </div> */}
+
 
     </React.Fragment>
   );
