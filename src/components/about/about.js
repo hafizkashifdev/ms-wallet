@@ -29,7 +29,7 @@ export const About = () => {
 
 
  
-  {/* <Grid
+  <Grid
     item
     xs={6}
     sx={{
@@ -69,7 +69,7 @@ export const About = () => {
       }}>
       Lorem ipsum dolor sit amet consectetur. In tellus maecenas massa convallis blandit nisl. Fames eget arcu lectus platea imperdiet.
     </Typography>
-  </Grid> */}
+  </Grid>
 
 <Grid
   item
@@ -136,26 +136,26 @@ export const About = () => {
   </Button>
 </Grid>
 
-  {/* <Grid item xs={6} style={{ position: 'relative', width: '798px', height: '640px', flexShrink: 0, overflow: 'hidden' }}>
+  <Grid item xs={6} style={{ position: 'relative', width: '798px', height: '640px', flexShrink: 0, overflow: 'hidden' }}>
   <div
     style={{
       backgroundImage: `url(${tabhandbg})`, // Set the background image
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
-      width: '100%', // Make sure the background div covers the entire width
-      height: '100%', // Make sure the background div covers the entire height
+      width: '100%', 
+      height: '100%', 
       position: 'absolute',
-      top: '50%', // Align the top of the background div to the center vertically
+      top: '50%', 
       transform: 'translateY(-50%)',
       left: 0,
       zIndex: -1,
     }}
   ></div>
   <img src={tabhand} alt="Image 6"  />
-</Grid> */}
+</Grid>
 
-{/* <Grid item xs={6} sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+<Grid item xs={6} sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
   <img src={men} alt="Image 6" style={{ maxWidth: '798px' }} />
 
   <img
@@ -264,9 +264,9 @@ export const About = () => {
   >
     CS at Google
   </Typography>
-</Grid> */}
+</Grid>
 
-{/* <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 20 ,mb:10}}>
+<Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 20 ,mb:10}}>
   <div style={{ backgroundColor: '#796EFF', padding: '64px 80px', width: '100%', display: 'flex',maxWidth: '1000px', alignItems: 'center' ,borderRadius:'16px'}}>
     <Typography
       variant="h6"
@@ -292,7 +292,7 @@ export const About = () => {
       <img src={applepaly} alt="apple" />
     </div>
   </div>
-</Grid> */}
+</Grid>
 
 
 
