@@ -5,7 +5,7 @@ import men from '../../assets/men.svg'
 import tabhand from '../../assets/tab.svg' 
 import googleplay from '../../assets/google-play-badge.svg' 
 import applepaly from '../../assets/appleplay.svg' 
-
+import './about.css';
 
 import smmenone from '../../assets/sm-men-two.png'
 import smmen2 from '../../assets/small-girl-img.svg'
@@ -16,29 +16,20 @@ export const About = () => {
   return (
     <Grid container spacing={2}>
  
-<Grid item xs={6} style={{ position: 'relative', width: '798px', height: '640px', flexShrink: 0, overflow: 'hidden' }}>
+<Grid item lg={6} xs={12} style={{ position: 'relative', width: '798px', height: '640px', flexShrink: 0, overflow: 'hidden' }}>
   <div
+   className='herohand'
     style={{
-      borderRadius: '0px 320px 320px 0px',
-      border: '1px dashed #F0EBFA',
-      opacity: 0.05,
-      background: 'linear-gradient(135deg, #4200FF 0%, #EE726F 47.61%, #0097FF 95.62%)',
-      width: '100%', 
-      height: '100%', 
-      position: 'absolute',
-      top: '59%',
-      transform: 'translateY(-50%)', 
-      right:'12%',
-      zIndex: -1,
+      
     }}
   ></div>
-  <img src={join} alt="Image 6" style={{ maxWidth: '798px' }} />
+  <img src={join} alt="hero_hand_image"  className='hero_hand_image'/>
 </Grid>
 
 
 
  
-  <Grid
+  {/* <Grid
     item
     xs={6}
     sx={{
@@ -78,53 +69,74 @@ export const About = () => {
       }}>
       Lorem ipsum dolor sit amet consectetur. In tellus maecenas massa convallis blandit nisl. Fames eget arcu lectus platea imperdiet.
     </Typography>
-  </Grid>
+  </Grid> */}
 
-  <Grid  item
-    xs={6}
-    
-    sx={{  display: 'flex',
+<Grid
+  item
+  lg={6}
+  xs={12}
+  sx={{
+    display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'flex-start',
-    textAlign: 'left', 
-    height: '74vh', }}>
-<Typography
-      variant="h6"
-      sx={{
-        fontSize: '55px',
-        fontWeight: 700,
-        color: 'var(--main-primary, #363565)',
-        p: 2,
-        fontFamily: 'Outfit',
-        fontStyle: 'normal',
-        lineHeight: 'normal',
-        mb: 2, 
-      }}
-    >
-    Interested in what <span style={{ color: '#8155FF' }}>Membership Wallet</span>  can do for your business?
-    </Typography>
-    <Button
-          sx={{
-            backgroundColor: '#8155FF',
-            mt: 2,
-            m:2,
-            color: '#ffffff',
-            borderRadius: '8px',
-            fontSize: '16px',
-            padding: '13px 36px',
-            fontWeight: 600,
-            fontFamily: 'Open Sans',
-            textTransform: 'capitalize',
-            '&:hover': {
-              backgroundColor: '#6d43e2'
-            },
-          }}
-        >
-         Visit business
-        </Button>
-  </Grid>
-  <Grid item xs={6} style={{ position: 'relative', width: '798px', height: '640px', flexShrink: 0, overflow: 'hidden' }}>
+    alignItems: {
+      lg: 'flex-start',
+      xs: 'center', // Center alignment for xs breakpoint
+    },
+    textAlign: {
+      lg: 'left',
+      xs: 'center', // Center alignment for xs breakpoint
+    },
+    height: '74vh',
+    mt: {
+      lg: 0,
+      sm: -20,
+      xs: -25,
+    },
+  }}
+>
+  <Typography
+    variant="h6"
+    sx={{
+      fontSize: '55px',
+      fontWeight: 700,
+      color: 'var(--main-primary, #363565)',
+      p: 2,
+      fontFamily: 'Outfit',
+      fontStyle: 'normal',
+      lineHeight: 'normal',
+      mb: 2,
+      mt:{sx:0,xs:-15}
+    }}
+    className='hero_typography'
+  >
+    Interested in what <span style={{ color: '#8155FF' }}>Membership Wallet</span> can do for your business?
+  </Typography>
+  <Button
+    sx={{
+      backgroundColor: '#8155FF',
+      display: 'block', // Make the button a block-level element
+      margin: '0 auto', // Center horizontally
+      mt: 2,
+      m: 2,
+      color: '#ffffff',
+      borderRadius: '8px',
+      fontSize: '16px',
+      padding: '13px 36px',
+      fontWeight: 600,
+      fontFamily: 'Open Sans',
+      textTransform: 'capitalize',
+      // textAlign: 'left', // Reset the textAlign for the Button
+      '&:hover': {
+        backgroundColor: '#6d43e2',
+      },
+    }}
+  >
+    Visit business
+  </Button>
+</Grid>
+
+  {/* <Grid item xs={6} style={{ position: 'relative', width: '798px', height: '640px', flexShrink: 0, overflow: 'hidden' }}>
   <div
     style={{
       backgroundImage: `url(${tabhandbg})`, // Set the background image
@@ -141,9 +153,9 @@ export const About = () => {
     }}
   ></div>
   <img src={tabhand} alt="Image 6"  />
-</Grid>
+</Grid> */}
 
-<Grid item xs={6} sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+{/* <Grid item xs={6} sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
   <img src={men} alt="Image 6" style={{ maxWidth: '798px' }} />
 
   <img
@@ -252,9 +264,9 @@ export const About = () => {
   >
     CS at Google
   </Typography>
-</Grid>
+</Grid> */}
 
-<Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 20 ,mb:10}}>
+{/* <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 20 ,mb:10}}>
   <div style={{ backgroundColor: '#796EFF', padding: '64px 80px', width: '100%', display: 'flex',maxWidth: '1000px', alignItems: 'center' ,borderRadius:'16px'}}>
     <Typography
       variant="h6"
@@ -280,7 +292,7 @@ export const About = () => {
       <img src={applepaly} alt="apple" />
     </div>
   </div>
-</Grid>
+</Grid> */}
 
 
 
