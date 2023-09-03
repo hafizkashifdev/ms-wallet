@@ -12,7 +12,7 @@ const Card = () => {
           variant="h6"
           sx={{
             fontSize: '32px',
-            border: '1px solid black',
+            // border: '1px solid black',
             fontWeight: 600,
             color: 'var(--text-body, #4E4B66)',
             fontFamily: 'Outfit',
