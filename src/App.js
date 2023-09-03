@@ -6,6 +6,9 @@ import heroBackgroundImage from '../src/assets/hero-bg.svg'
 import Brands from './components/brands/brands';
 import { About } from './components/about/about';
 import Footer from './components/footer/footer';
+import TabWallet from './components/tab-wallet/tab-wallet';
+import Reviews from './components/reviews/reviews';
+import Card from './components/card/card';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <Hero />
       <Brands/>
       <About/>
+      <TabWallet/>
+      <Reviews/>
+      <Card/>
       <Footer/>
     </div>
    

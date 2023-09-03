@@ -19,10 +19,9 @@ import DrawerComp from "../drawer/drawer";
 
 const pages = [
   { title: 'Home', dropdown: false },
-  { title: 'Find work', dropdown: false },
-  { title: 'Company', dropdown: true },
-  { title: 'Discover', dropdown: false },
-  { title: 'Resolution Center', dropdown: true }
+  { title: 'Offers', dropdown: false },
+  { title: 'Business', dropdown: false },
+  { title: 'Contact Us', dropdown: false },
 ];
 
 

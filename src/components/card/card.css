@@ -1,0 +1,17 @@
+.card-style{
+    max-width:1200px;
+}
+
+
+.card-app{
+display:'flex';
+margion-left:'auto';
+text-align:'center';
+
+}
+@media (max-width: 1200px) {
+    
+        .card-style{
+            display:'none'
+        }
+  }

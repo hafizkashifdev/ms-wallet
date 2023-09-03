@@ -42,7 +42,7 @@ const Footer = () => {
     <>    <footer style={{ backgroundColor: 'White', padding: '1rem' }}>
       <Container maxWidth="xl"> 
   
-    <Grid container spacing={2} sx={{mt:2,}}>
+    <Grid container spacing={2} sx={{mt:4,}}>
       <Grid item xs={12} sm={6} md={4} sx={columnStyles} >
       
        <img src={flogo} alt ='foter logo'>
