@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material'
+import { Box, Divider, Grid, Rating, Typography } from '@mui/material'
 import React from 'react'
 import smmenone from '../../assets/sm-men-two.png'
 import smmen2 from '../../assets/small-girl-img.svg'
@@ -66,6 +66,9 @@ const Reviews = () => {
     >
       I LOVE using the stocard app no worries about looking for my wallet<br /> then going through all the cards individually.
     </Typography>
+<Divider sx={{color:'#35414B',height:'4px', border:'1px solid black'}} textAlign="left"/>
+
+<Rating   sx={{p:2}}name="read-only" value={3} readOnly />
 
     <Typography
       variant="body1"
