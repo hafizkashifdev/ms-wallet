@@ -7,7 +7,7 @@ import applepaly from '../../assets/appleplay.svg';
 const Card = () => {
   return (
     <Grid item xs={12} sx={{ display:{lg:'flex',xs:'none'}, justifyContent: 'center', alignItems: 'center', mt: 20, mb: 10 }}>
-      <div  className ="card-style "  style={{ backgroundColor: '#796EFF', padding: '64px 80px', width: '100%', display: 'flex',  alignItems: 'center', borderRadius: '16px' , }}>
+      <div  className ="card-style "  style={{ backgroundColor: '#796EFF', padding: '64px 80px', width: '100%', display: 'flex',maxWidth:'1280px',  alignItems: 'center', borderRadius: '16px' , }}>
         <Typography
           variant="h6"
           sx={{
