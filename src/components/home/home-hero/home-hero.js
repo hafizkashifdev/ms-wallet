@@ -5,7 +5,7 @@ import herobg from "../../../assets/framehero.svg";
 import seacrcIcon from "../../../assets/icon/search-normal.svg";
 import heroimg from "../../../assets/safe-box.svg";
 import './home-hero.css';
-import Card from "../../card/card";
+// import Card from "../../card/card";
 
 const HomeHero = () => {
   const searchBarStyles = {
