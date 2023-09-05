@@ -127,7 +127,7 @@ const HomeHero = () => {
           </Grid>
          
         </Grid>
-        <Card/>
+        {/* <Card/> */}
       </Container>
     </div>
   );
