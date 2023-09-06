@@ -14,10 +14,7 @@ const Hero = () => {
     { src: barfi, top: "92%", right: "1%" }
   ];
 
-  const commonBoxStyles = {
-    position: "absolute",
-    display: { xl: "block", xs: "none" }
-  };
+ 
   
   
   return (
@@ -39,16 +36,17 @@ const Hero = () => {
         spacing={2}
         justifyContent="center"
         alignItems="center"
-        sx={{ height: "100vh", mt: 2, px: { md: "80px", xxl: "120px", sm: 4 } }}
+        sx={{ height: "100vh", mt: {sm:2,xs:6}, px: { md: "80px", xxl: "120px", sm: '0px' } }}
       >
         <Grid item xs={12} lg={6} sx={{ position: "relative", p: 2, m: 0 }}>
           <Typography
             variant="h1"
             sx={{
-              fontSize: { lg: "72px", xs: "44px" },
-              fontWeight: { lg: 700, xs: 500 },
+              fontSize: { lg: "72px", xs: "60px" },
+              fontWeight: { lg: 700, xs: 700 },
+              
               color: "#2F2F2F",
-              p: {xl:2,xs:4},
+              p: {xl:2,xs:1},
               fontFamily: "Open Sans",
               fontStyle: "normal",
               lineHeight: { lg: "90px", xs: "none" },
@@ -60,16 +58,16 @@ const Hero = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: { lg: "72px", xs: "44px" },
-              fontWeight: 700,
+              fontSize: { lg: "72px", xs: "60px" },
+              fontWeight: { lg: 700, xs: 700 },
               color: "#8155FF",
               fontFamily: "Open Sans",
               fontStyle: "normal",
               lineHeight: "10px",
               lineHeight: { lg: "90px", xs: "none" },
               letterSpacing: "-1.44px",
-              mt: {xl:-4,xs:-7},
-              p: {xl:2,xs:4},
+              mt: {xl:-4,xs:-2},
+              p: {xl:2,xs:1},
             }}
           >
             <span style={{ color: "#8155FF" }}> Lorem ipsum </span>
@@ -79,13 +77,13 @@ const Hero = () => {
             variant="body1"
             sx={{
               fontSize: "24px",
-              p: {xl:2,xs:4},
+              p: {xl:2,xs:1.4},
               fontWeight: 400,
               color: "#4E4B66",
               fontFamily: "Open Sans",
               fontStyle: "normal",
               lineHeight: "32px",
-              mt: {xl:2,xs:-6},
+              mt: {xl:2,xs:-2},
             }}
           >
             Lorem ipsum dolor sit amet consectetur. In tellus maecenas massa
@@ -96,9 +94,9 @@ const Hero = () => {
           <Button
             sx={{
               backgroundColor: "#8155FF",
-              mt: {xl:2,xs:0},
+              mt: {xl:2,xs:2},
               // m: {xl:2,xs:4},
-              ml:{xl:2,xs:4},
+              ml:{xl:2,xs:1},
               color: "#ffffff",
               borderRadius: "8px",
               fontSize: "16px",

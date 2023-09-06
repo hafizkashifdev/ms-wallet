@@ -31,6 +31,8 @@ const columnStyles = {
   flexDirection: 'column',
   alignItems: 'flex-start',
   marginBottom: '1rem',
+  
+  
 };
 
 
@@ -40,8 +42,8 @@ const Footer = () => {
     <>    <footer style={{ backgroundColor: 'White', padding: '1rem' }}>
       <Container maxWidth="xl"> 
   
-    <Grid container spacing={2} sx={{mt:2}}>
-      <Grid item xs={12} sm={4} md={4} style={columnStyles}>
+    <Grid container spacing={2} sx={{mt:4,}}>
+      <Grid item xs={12} sm={6} md={4} sx={columnStyles} >
       
        <img src={flogo} alt ='foter logo'>
        </img>
@@ -49,22 +51,22 @@ const Footer = () => {
        Copyrights © 2023 All Rights Reserved by Membership Wallet
        </Typography>
       </Grid>
-        <Grid item xs={12} sm={4} md={2} style={columnStyles}>
-          <Typography sx={{color:'#363565',fontFamily:'Outfit',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2}}>Company</Typography>
-          <a href="#" className='link '>About Us</a>
-          <a href="#"className='link '>Work With Us</a>
-          <a href="#"className='link '>Find Work</a>
+        <Grid item xs={12}  sm={6} md={2} sx={columnStyles}>
+          <Typography sx={{color:'#363565',fontFamily:'Outfit',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,mr:{lg:0,xs:2}}}>Company</Typography>
+          <a href="/" className='link '>About Us</a>
+          <a href="/" className='link '>Work With Us</a>
+          <a href="/" className='link '>Find Work</a>
         </Grid>
-        <Grid  item xs={12} sm={4} md={3.5} style={columnStyles}>
+        <Grid  item xs={12} sm={6} md={3.5} style={columnStyles}>
           <Typography  sx={{color:'#363565',fontFamily:'Outfit',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2}}>Resolution Centre</Typography>
-          <a href="#"className='link'>Data Policy</a>
-          <a href="#"className='link '>Privacy Policy</a>
-          <a href="#"className='link '>Social Media Links</a>
-          <a href="#"className='link'>Cookie Policy</a>
-          <a href="#"className='link '>Contact Us</a>
+          <a href="/" className='link'>Data Policy</a>
+          <a href="/" className='link '>Privacy Policy</a>
+          <a href="/" className='link '>Social Media Links</a>
+          <a href="/" className='link'>Cookie Policy</a>
+          <a href="/" className='link '>Contact Us</a>
        
         </Grid>
-        <Grid item xs={12} sm={4} md={2} style={columnStyles}>
+        <Grid item xs={12} sm={6} md={2} style={columnStyles}>
         <Typography sx={{color:'#363565',fontFamily:'Outfit',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',}}>
     Install App
   </Typography>

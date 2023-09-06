@@ -23,6 +23,7 @@
 .hereo-graph_img{
     width:100%;
     height:502px;
+    /* border:1px solid red; */
     /* max-width: 707px; */
 }
 @media (max-width:1200px)
@@ -34,6 +35,18 @@
         right: -60px;
         z-index: -9999;
     }
+}
+
+@media (max-width:900px)
+{
+    .hero-img{
+        position: absolute;
+        /* border: 1px solid black; */
+        top:-300px;
+        right: 0px;
+        z-index: -9999;
+    }
+   
 }
 @media (max-width:786px)
 {

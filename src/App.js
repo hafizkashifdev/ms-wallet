@@ -6,14 +6,22 @@ import heroBackgroundImage from '../src/assets/hero-bg.svg'
 import Brands from './components/brands/brands';
 import { About } from './components/about/about';
 import Footer from './components/footer/footer';
+import TabWallet from './components/tab-wallet/tab-wallet';
+import Reviews from './components/reviews/reviews';
+import HomeHero from './components/home/home-hero/home-hero';
+// import { HomeHero } from './components/home/home-hero/home-hero';
 
 function App() {
   return (
     <div>
     <Header/>
       <Hero />
-      {/* <Brands/>
-      <About/> */}
+      {/* <HomeHero/> */}
+      {/* <Brands/> */}
+      <About/>
+      <TabWallet/>
+      <Reviews/>
+    
       <Footer/>
     </div>
    

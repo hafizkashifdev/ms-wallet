@@ -10,7 +10,9 @@ import './brands.css';
 const Brands = () => {
   return (
     <React.Fragment>
-      <Box sx={{ mt: { xl: -16, sm: 22,xs:0 } }}>
+      <Box
+       sx={{ mt: { xl: -16, sm: 22,xs:0 } }}
+       >
         <Typography
           sx={{
             color: '#4E5A65',
