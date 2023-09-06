@@ -6,7 +6,7 @@ COPY . .
 
 RUN npm i -f
 
-ENV NODE_OPTIONS="--max-old-space-size=1024"
+ENV NODE_OPTIONS="--max-old-space-size=4096"
 
 RUN npm run build
 
