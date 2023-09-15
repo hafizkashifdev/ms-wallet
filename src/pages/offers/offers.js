@@ -2,9 +2,9 @@ import React from 'react'
 
 const Offers = () => {
   return (
-    <div>
-      <p>Offers</p>
-    </div>
+    <p>
+        Hello i am Offers
+    </p>
   )
 }
 

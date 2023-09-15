@@ -13,7 +13,7 @@
   
 
   .link {
-    color: #4e4b66;
+    color: #4E4B66;
     font-family: Outfit;
     font-size: 14px;
     font-weight: 500;
@@ -34,7 +34,7 @@
   }
   
   .link:hover {
-    color: blue;
+    color: #6938EF;
   }
   
   /* Animation for the underline */
@@ -54,7 +54,7 @@
   .link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-    background-color: blue;
+    background-color: #363565;
   }
   
 

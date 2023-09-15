@@ -1,0 +1,111 @@
+/* Example CSS */
+
+
+
+.MuiAppBar-root.transparent-header {
+  background: transparent !important;
+  box-shadow: none !important;
+  /* padding-right: 120px !important, */
+}
+
+.hamburger-icon {
+  color: black !important;
+}
+
+.close-icon {
+  color: black !important;
+}
+
+
+
+
+.custom-link {
+    /* margin-right: 20px; */
+    color: var(--gray-scale-gray-600, #475467);
+    text-decoration: none;
+    position: relative;
+    text-transform: capitalize !important;
+   
+  }
+  .custom-link:hover {
+    background-color:'transparent !important';
+    background: transparent !important;
+    color: #6938EF !important;
+  }
+  
+  
+  .custom-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px; 
+    width: 100%;
+    height: 1px;
+    background-color: #6938EF;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+    text-transform: capitalize;
+  }
+  
+  .custom-link:hover::after {
+    transform: scaleX(0.4);
+    transform-origin: left;
+    margin-left: 11px;
+  }
+
+
+.active-route {
+  color: #6938EF !important;
+}
+
+.active-route::after {
+  transform: scaleX(0.4);
+  transform-origin: left;
+  margin-left: 10px;
+}
+
+.hamburger-icon {
+  color:#dddddd !important;
+}
+
+.text-font {
+  font-family: "Outfit", sans-serif;
+}
+
+ 
+  
+
+
+
+  /* @media (max-width: 900px) {
+
+    .MuiAppBar-root.transparent-header {
+      background: red !important;
+      box-shadow: none !important;
+    
+    }
+  } */
+
+  /* @media (max-width: 600px) {
+
+    .MuiAppBar-root.transparent-header {
+      background: red !important;
+      box-shadow: none !important;
+      padding-right: 80px,
+    }
+  } */
+
+
+
+
+  @media (max-width: 600px) {
+    .hide-on-xs {
+      display: none;
+    } }
+
+    @media (min-width: 601px) and (max-width: 960px) {
+
+      .hide-on-sm-md {
+        display: none;
+      } }

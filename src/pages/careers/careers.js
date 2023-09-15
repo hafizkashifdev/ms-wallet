@@ -2,10 +2,11 @@ import React from 'react'
 
 const Careers = () => {
   return (
-   <p>
-    careers
-   </p>
+    <div>
+      Hello i am Careers
+    </div>
   )
 }
 
 export default Careers
+

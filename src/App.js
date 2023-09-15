@@ -1,30 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/header/header';
-import Hero from './components/hero/hero';
-import heroBackgroundImage from '../src/assets/hero-bg.svg'
-import Brands from './components/brands/brands';
-import { About } from './components/about/about';
-import Footer from './components/footer/footer';
-import TabWallet from './components/tab-wallet/tab-wallet';
-import Reviews from './components/reviews/reviews';
-import HomeHero from './components/home/home-hero/home-hero';
-// import { HomeHero } from './components/home/home-hero/home-hero';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css"
+import Home from "./pages/home/home";
+import Offers from "./pages/offers/offers";
+import Business from "./pages/business/business";
+import Careers from "./pages/careers/careers";
+import ContactUs from "./pages/contact-us/contact-us";
+import Layout from "./lay-out/lay-out";
 
 function App() {
   return (
-    <div>
-    <Header/>
-      <Hero />
-      {/* <HomeHero/> */}
-      {/* <Brands/> */}
-      <About/>
-      <TabWallet/>
-      <Reviews/>
-    
-      <Footer/>
-    </div>
-   
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/offers" element={<Offers />} />
+          <Route path="/business" element={<Business />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

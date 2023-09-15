@@ -39,7 +39,7 @@ const columnStyles = {
 const Footer = () => {
 
   return (
-    <>    <footer style={{ backgroundColor: 'White', padding: '1rem' }}>
+    <>    <footer style={{ backgroundColor: 'White', padding: '1rem',marginTop:"480px" }}>
       <Container maxWidth="xl"> 
   
     <Grid container spacing={2} sx={{mt:4,}}>

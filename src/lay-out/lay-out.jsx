@@ -1,11 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Footer from './footer/footer';
+import Header from './header/header';
 
-const LayOut = () => {
+
+
+
+function Layout({ children }) {
   return (
-    <div>
+<div>
+   
+        <Header/>
       
-    </div>
-  )
+      <main>{children}</main>
+      <footer><Footer/></footer>
+      </div>
+  );
 }
 
-export default LayOut
+export default Layout;
