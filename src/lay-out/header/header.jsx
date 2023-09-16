@@ -17,7 +17,7 @@ import Container from "@mui/material/Container";
 import Menu from "@mui/material/Menu";
 import ListItemText from "@mui/material/ListItemText";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Grid } from "@mui/material";
+import { Divider, Grid } from "@mui/material";
 import { useLocation } from "react-router-dom";
 
 
@@ -47,9 +47,10 @@ const headersData = [
 
 const useStyles = makeStyles(() => ({
   header: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "transparent!important",
     height: "0px",
     // zIndex: -1,
+    // border:"2px solid red"
   },
   logo: {
     textAlign: "left",
@@ -66,9 +67,10 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     justifyContent: "space-between", 
     alignItems: "center", 
-    // boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",
+    // backgroundColor: "#000000",
+
     borderRadius: "10px",
-    marginTop: "16px",
+   
     // border: "1px solid red",
   },
   drawerContainer: {},
@@ -155,8 +157,11 @@ export default function Header() {
     return (
       <Container maxWidth="xl">
         <Grid container>
-          <Grid item xs={12} >
-            <Toolbar className={toolbar}>
+          <Grid item xs={12} sx={{ marginTop: "52px",borderRadius: "10px",boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",bgcolor:"#fff"}}>
+            <Toolbar className={toolbar} sx={{ boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",paddingLeft:{ lg:"100px",md:"30px",},
+    paddingRight: { lg:"100px",md:"30px"},
+    paddingTop: "20px",
+    paddingBottom: "20px",}}>
               <div className={logo}>{femmecubatorLogo}</div>
               <div>{getMenuButtons()}</div>
               <div>
@@ -175,8 +180,11 @@ export default function Header() {
       setState((prevState) => ({ ...prevState, drawerOpen: false }));
   
     return (
-      <Container maxWidth="lg">
-        <Toolbar className={toolbar}>
+      <Container maxWidth="xl">
+        <Toolbar className={toolbar} 
+        // sx={{ marginTop: "52px",borderRadius: "10px",boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",bgcolor:"#fff"}}
+        
+        >
           <div>{femmecubatorLogo}</div>
           <div style={{ flex: 1 }}></div>
           <IconButton
@@ -261,18 +269,20 @@ export default function Header() {
   );
   
   const getDrawerChoices = () => {
-    const menuItems = headersData.map(({ label, href }) => (
-      <Link
-        {...{
-          component: RouterLink,
-          to: href,
-          color: "inherit",
-          style: { textDecoration: "none" },
-          key: label,
-        }}
-      >
-        <MenuItem sx={{ color: "#BEC2C1" }}>{label}</MenuItem>
-      </Link>
+    const menuItems = headersData.map(({ label, href, subMenu }) => (
+      <div key={label}>
+        <Link
+          {...{
+            component: RouterLink,
+            to: href,
+            color: "inherit",
+            style: { textDecoration: "none" },
+          }}
+        >
+          <MenuItem sx={{ color: "#BEC2C1" }}>{label}</MenuItem>
+        </Link>
+        {/* <Divider sx={{ backgroundColor: "#BEC2C1" ,width:"100%"}} />  */}
+      </div>
     ));
   
     return (
@@ -367,7 +377,7 @@ export default function Header() {
   return (
     <header>
       <AppBar
-        className={`${header} transparent-header`}
+        className={`${header} transparent-header `}
         style={{ position: "absolute" }}
       >
         <Toolbar className={toolbar}>

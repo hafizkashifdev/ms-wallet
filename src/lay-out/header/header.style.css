@@ -3,7 +3,7 @@
 
 
 .MuiAppBar-root.transparent-header {
-  background: transparent !important;
+  background-color: transparent !important;
   box-shadow: none !important;
   /* padding-right: 120px !important, */
 }
