@@ -14,9 +14,9 @@ import "./header.style.css";
 import logoimg from "../../assets/logo.svg";
 import { Box } from "@mui/system";
 import Container from "@mui/material/Container";
-import Menu from "@mui/material/Menu";
-import ListItemText from "@mui/material/ListItemText";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import Menu from "@mui/material/Menu";
+// import ListItemText from "@mui/material/ListItemText";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Divider, Grid } from "@mui/material";
 import { useLocation } from "react-router-dom";
 
@@ -99,7 +99,7 @@ const useStyles = makeStyles(() => ({
 
 export default function Header() {
   const location = useLocation();
-  const [isButtonActive, setIsButtonActive] = useState(false);
+  // const [isButtonActive, setIsButtonActive] = useState(false);
   const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
   // const [drawerOpenn, setDrawerOpen] = useState(false);
 
@@ -110,25 +110,25 @@ export default function Header() {
 
   const classes = useStyles();
  
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [solutionsAnchorEl, setSolutionsAnchorEl] = useState(null);
-  const [activeSolution, setActiveSolution] = useState(""); 
+  // const [anchorEl, setAnchorEl] = useState(null);
+  // const [solutionsAnchorEl, setSolutionsAnchorEl] = useState(null);
+  // const [activeSolution, setActiveSolution] = useState(""); 
 
-  const handleMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  // const handleMenuOpen = (event) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
 
-  const handleSolutionsMenuOpen = (event) => {
-    setSolutionsAnchorEl(event.currentTarget);
-  };
+  // const handleSolutionsMenuOpen = (event) => {
+  //   setSolutionsAnchorEl(event.currentTarget);
+  // };
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
+  // const handleMenuClose = () => {
+  //   setAnchorEl(null);
+  // };
 
-  const handleSolutionsMenuClose = () => {
-    setSolutionsAnchorEl(null);
-  };
+  // const handleSolutionsMenuClose = () => {
+  //   setSolutionsAnchorEl(null);
+  // };
 
   const [state, setState] = useState({
     mobileView: false,
@@ -300,16 +300,16 @@ export default function Header() {
   const getMenuButtons = () => {
     return headersData.map(({ label, href, subMenu }) => {
       const isActive = location.pathname === href;
-
+// header condition if sub menure exist in nav 
       if (subMenu) {
         return (
           <div
-            key={label}
-            className={`${menuButton} ${classes.label} custom-link text-font  ${
-              isActive || activeSolution ? "active-route" : ""
-            }`}
+            // key={label}
+            // className={`${menuButton} ${classes.label} custom-link text-font  ${
+            //   isActive || activeSolution ? "active-route" : ""
+            // }`}
           >
-            <Button
+            {/* <Button
               aria-controls="solutions-menu"
               aria-haspopup="true"
               onClick={(event) => {
@@ -343,7 +343,7 @@ export default function Header() {
                   <ListItemText primary={subItem.label} />
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
           </div>
         );
       } else {
@@ -368,10 +368,10 @@ export default function Header() {
   };
 
   // Function to handle sub-item click and set active solution
-  const handleSubItemClick = (id) => {
-    setActiveSolution(id);
-    handleSolutionsMenuClose();
-  };
+  // const handleSubItemClick = (id) => {
+  //   setActiveSolution(id);
+  //   handleSolutionsMenuClose();
+  // };
 
 
   return (
