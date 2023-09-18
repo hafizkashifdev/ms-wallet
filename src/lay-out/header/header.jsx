@@ -157,7 +157,7 @@ export default function Header() {
     return (
       <Container maxWidth="xl">
         <Grid container>
-          <Grid item xs={12} sx={{ marginTop: "52px",borderRadius: "10px",boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",bgcolor:"#fff"}}>
+          <Grid item xs={12} sx={{ marginTop: "60px",borderRadius: "10px",boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",bgcolor:"#fff"}}>
             <Toolbar className={toolbar} sx={{ boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",paddingLeft:{ lg:"100px",md:"30px",},
     paddingRight: { lg:"100px",md:"30px"},
     paddingTop: "20px",
