@@ -1,10 +1,13 @@
+import { Container, Grid, Typography } from '@mui/material'
 import React from 'react'
+import HomeHero from './home-hero/home-hero'
 
 const Home = () => {
   return (
-    <div>
-      i am Home
-    </div>
+ <>
+
+ <HomeHero/>
+ </>
   )
 }
 

@@ -1,0 +1,8 @@
+.Typography-heading-main{
+    color: var(--gray-scale-gray-700, #344054);
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 88px;
+    letter-spacing: -1.44px;
+  }
+  
