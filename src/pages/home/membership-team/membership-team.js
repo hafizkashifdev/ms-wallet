@@ -10,7 +10,8 @@ const MembershipTeam = () => {
     background: `url(${memberimg})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    padding: '2rem', // Adjust padding as needed
+    padding: '2rem', 
+    mt:"87px"
   };
 
   return (

@@ -1,0 +1,40 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .app-btn {
+    width: '45%';
+    maxWidth: '160px';
+    color: '#fff';
+    margin: '20px 10px';
+    text-align: 'left';
+    border-radius: '5px';
+    text-decoration: 'none';
+    fontFamily: '"Lucida Grande", sans-serif';
+    fontSize: '10px';
+    textTransform: 'uppercase';
+  
+    &.blu {
+      backgroundColor: '#101010';
+      transition: 'background-color 0.25s linear';
+  
+      &:hover {
+        backgroundColor: '#454545';
+      }
+    }
+  
+    i {
+      width: '20%';
+      textAlign: 'center';
+      fontSize: '28px';
+      marginRight: '7px';
+    }
+  
+    .big-txt {
+      fontSize: '17px';
+      textTransform: 'capitalize';
+    }
+  }
+  

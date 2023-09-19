@@ -182,7 +182,7 @@ export default function Header() {
     return (
       <Container maxWidth="xl">
         <Toolbar className={toolbar} 
-        // sx={{ marginTop: "52px",borderRadius: "10px",boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",bgcolor:"#fff"}}
+        sx={{ marginTop: "52px",borderRadius: "10px",boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",bgcolor:"#fff"}}
         
         >
           <div>{femmecubatorLogo}</div>
