@@ -22,7 +22,7 @@ const HomeHero = () => {
   return (
     <Container maxWidth="xl">
 
-    <Grid container sx={{mt:{lg:"274px",sm:"170px",xs:"70px"}}}>
+    <Grid container sx={{mt:{lg:"270px",sm:"170px",xs:"70px"}}}>
       <Grid item lg={5} xs={12}sx={{ position: 'relative' }}>
 <Typography 
 
@@ -150,7 +150,7 @@ sx={{
         sx={{
           display:{lg:"flex",xs:"none"},
           position: 'absolute',
-          bottom: "13%",
+          bottom: "12%",
           right: "15%",
           // border:"1px solid black"
         }}

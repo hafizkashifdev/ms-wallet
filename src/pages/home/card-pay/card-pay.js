@@ -61,7 +61,7 @@ const CardPay = () => {
       right: '0%',
     }}
   >
-    <img src={imgdots} alt="arrow-ing" />
+    <img src={imgdots} alt="dot-ing" />
   </Box>
 
         </Grid>
