@@ -12,12 +12,13 @@ const Home = () => {
  <>
 
  <HomeHero/>
-
+ <MembershipBusiness/>
+ <MembershipTeam/>
  <CardPay/>
  <PointsUpdate/>
  <UnleashEfficiency/>
-{/* <MembershipTeam/> */}
- {/* <MembershipBusiness/> */}
+
+
  
  </>
   )

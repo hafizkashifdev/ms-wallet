@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
 import mobilepay from "../../../assets/home/mobilepay.svg"
+import mobilepayiphone from "../../../assets/home/paymb.svg"
 import imgdots from "../../../assets/home/dots.svg"
 import imgframe from "../../../assets/home/frame.svg"
 
@@ -21,58 +22,63 @@ const CardPay = () => {
     const classes = useStyles();
 
   return (
-    <Container sx={{ mt: 20 }}>
-      <Grid container>
-      <Grid item lg={4} xs={12}>
-    <div style={{ width: "100%" }}>
-      <img src={mobilepay} alt="pay-slip" style={{ width: "100%" }} />
-    </div>
-   
- 
-</Grid>
+<>
 
-        <Grid item lg={8} xs={12} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' ,backgroundImage: `url(${imgframe})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-          <Typography 
-               className='text-font'
+<Container maxWidth="xl" sx={{mt:20,display:{md:"flex",xs:"none"}}}>
+      <Grid container>
+       
+        <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,}}>
+          <img src={mobilepayiphone} alt="frame" draggable={false}  style={{ maxWidth: '100%', height: 'auto' }} />
+        </Grid>
+      </Grid>
+    </Container>
+
+<Container maxWidth="lg" sx={{ mt: 20,display:{md:"none",xs:"flex"} }}>
+  <Grid container>
+    <Grid item xs={12}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", }}>
+        <Box sx={{borderRadius: "16px",       p:2,
+    border: "1px solid var(--gray-scale-gray-300, #D0D5DD)",  
+    background: "#FFF",}}>
+        <Typography
+          className='text-font'
           sx={{
             color: 'var(--gray-scale-gray-800, #1D2939)',
-            // fontFamily: 'Open Sans',
             fontSize: '48px',
             fontStyle: 'normal',
             fontWeight: 700,
             lineHeight: '60px',
             letterSpacing: '-0.96px',
-            textAlign: 'left',
-          }}>
-            Your card just a tap away
-          </Typography>
-          <Typography 
+          }}
+        >
+          Your card just a tap away
+        </Typography>
+        <Typography
           className='text-font'
           sx={{
             color: 'var(--secondary-secondary-600, #58506C)',
-            mt:"24px",
+            // mt: "28px",
             fontSize: '18px',
             fontStyle: 'normal',
             fontWeight: 400,
             lineHeight: '30px',
-            textAlign: 'left',
-          }}>
-           With our Card Assistant you never forget to use your card. It will show right on your lock screen when you are in a store.
-          </Typography>
-          <Box
-    sx={{
-      display: { lg: 'flex', xs: 'none' },
-      position: 'absolute',
-      top: '3%',
-      right: '0%',
-    }}
-  >
-    {/* <img src={imgdots} alt="dot-ing" /> */}
-  </Box>
+           
+          }}
+        >
+          With our Card Assistant, you never forget to use your card. It will show right on your lock screen when you are in a store.
+        </Typography></Box>
+        <Box sx={{ maxWidth: "100%", width:"100%",marginTop: "50px",  mr:{sm:"140px",xs:"60px"} ,}}>
+          <img src={mobilepay} alt="pay-slip" style={{ maxWidth: "100%",width:"100%", marginRight:"40px" }} />
+        </Box>
+      </div>
+    </Grid>
+  </Grid>
+</Container>
 
-        </Grid>
-      </Grid>
-    </Container>
+
+
+
+    </>
   )
 }
 
