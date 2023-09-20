@@ -2,7 +2,7 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material'
 import React from 'react';
 import avatorimg from "../../../assets/home/avators.svg";
 // import apple from "../../../assets/home/apple.svg"
-import playbt from "../../../assets/home/play.svg"
+import dots from "../../../assets/home/dots.svg"
 import membimg from "../../../assets/home/memiphone.svg"
 import apple from "../../../assets/home/apple-btn.svg";
 import play from "../../../assets/home/play-btn.svg";
@@ -12,6 +12,7 @@ import mobileshadow from "../../../assets/home/shadow.svg";
 
 const UnleashEfficiency = () => {
   return (
+    <>
    <Container maxWidth="xl">
 <Grid container sx={{mt:"240px"}} >
 <Grid item lg={6} xs={12} >
@@ -111,6 +112,15 @@ Join our growing family of members who have found an easier path and discovered 
 
 </Grid>
    </Container>
+   <Container maxWidth="xxl">
+<Grid container  >
+<Grid item xs={12} sx={{position:"relative"}}>
+<img src={dots} alt="arrow" style={{position:'absolute',top:"-480px",left:"20px"}}>
+</img>
+</Grid>
+</Grid>
+   </Container>
+   </>
   )
 }
 

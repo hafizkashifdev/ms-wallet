@@ -25,6 +25,7 @@ const CardPay = () => {
 <>
 
 <Container maxWidth="xl" sx={{mt:20,display:{md:"flex",xs:"none"}}}>
+  
       <Grid container>
        
         <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,}}>
@@ -32,6 +33,14 @@ const CardPay = () => {
         </Grid>
       </Grid>
     </Container>
+    <Container maxWidth="xxl">
+  <Grid container>
+    <Grid xs={12} item sx={{ display: {xl:'flex',xs:"none"} ,position:"relative"}}>
+      <img src={imgdots} alt="dots" style={{position:"absolute",top:"-230px",right:'30px'}} />
+    </Grid>
+  </Grid>
+</Container>
+
 
 <Container maxWidth="lg" sx={{ mt: 20,display:{md:"none",xs:"flex"} }}>
   <Grid container>

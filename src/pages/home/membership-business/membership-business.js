@@ -4,11 +4,9 @@ import memberimg from "../../../assets/home/membershipbuss.svg";
 import btnright from "../../../assets/home/arrow-right.svg";
 import graphgif from "../../../assets/home/graphhome.gif";
 import gropup from "../../../assets/home/group.svg";
+import dotimg from "../../../assets/home/dots.svg";
 
 
-
-
- 
 
 const MembershipBusiness = () => {
 
@@ -23,10 +21,18 @@ const MembershipBusiness = () => {
 
   return (
     <Container maxWidth="xl"  >
-    <Grid container sx={mainContainerStyle}>
-      <Grid item xs={2}>
-        <img src={graphgif} alt="graphgif" />
+      <Grid container>
+      <Grid item xs={12} sx={{ display: {xl:"flex",xs:"none"}, justifyContent: "flex-end" ,position:'relative'}}>
+  <img src={dotimg} alt="dot-img" style={{position:'absolute',top:"400px",right:"-140px"}}/>
+</Grid>
+
+
       </Grid>
+    <Grid container sx={mainContainerStyle}>
+    <Grid item xs={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={graphgif} alt="graphgif" style={{ width: '150px', height: '150px' }} />
+</Grid>
+
       <Grid item xs={10}>
         <Typography
           sx={{
@@ -38,7 +44,7 @@ const MembershipBusiness = () => {
             color: 'var(--gray-scale-gray-800, #1D2939)',
             letterSpacing: '-0.96px',
             pl:10,
-            mt:2
+            // mt:2
           }}
         >
           Interested in what
