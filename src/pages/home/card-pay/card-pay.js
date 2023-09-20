@@ -2,6 +2,9 @@ import { Box, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
 import mobilepay from "../../../assets/home/mobilepay.svg"
 import imgdots from "../../../assets/home/dots.svg"
+import imgframe from "../../../assets/home/frame.svg"
+
+import layer  from"../../../assets/home/line.svg" 
 
 import { makeStyles } from '@mui/styles'; 
 
@@ -20,12 +23,15 @@ const CardPay = () => {
   return (
     <Container sx={{ mt: 20 }}>
       <Grid container>
-      <Grid item lg={6} xs={12}>
-          <Box>
-            <img src={mobilepay} alt="pay-slip" />
-          </Box>
-        </Grid>
-        <Grid item lg={6} xs={12} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative' }}>
+      <Grid item lg={4} xs={12}>
+    <div style={{ width: "100%" }}>
+      <img src={mobilepay} alt="pay-slip" style={{ width: "100%" }} />
+    </div>
+   
+ 
+</Grid>
+
+        <Grid item lg={8} xs={12} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' ,backgroundImage: `url(${imgframe})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <Typography 
                className='text-font'
           sx={{
@@ -61,7 +67,7 @@ const CardPay = () => {
       right: '0%',
     }}
   >
-    <img src={imgdots} alt="dot-ing" />
+    {/* <img src={imgdots} alt="dot-ing" /> */}
   </Box>
 
         </Grid>

@@ -6,12 +6,15 @@ import playbt from "../../../assets/home/play.svg"
 import membimg from "../../../assets/home/memiphone.svg"
 import apple from "../../../assets/home/apple-btn.svg";
 import play from "../../../assets/home/play-btn.svg";
+import mobileshadow from "../../../assets/home/shadow.svg";
+
+
 
 const UnleashEfficiency = () => {
   return (
    <Container maxWidth="xl">
 <Grid container sx={{mt:"240px"}} >
-<Grid item lg={6} xs={12}>
+<Grid item lg={6} xs={12} >
 <Typography
 
 className='sub-heading-font'
@@ -100,9 +103,11 @@ Join our growing family of members who have found an easier path and discovered 
 
 
 </Grid>
-<Grid item lg={6} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,mt:{md:0,xs:4}}}>
-  <img src={membimg} alt="iphone" width={"100%"} />
+<Grid item lg={6} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: { md: 0, xs: 4 }, backgroundImage: `url(${mobileshadow})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+
+    <img src={membimg} alt="iphone" width={"100%"} />
 </Grid>
+
 
 </Grid>
    </Container>
