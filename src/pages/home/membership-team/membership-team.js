@@ -65,7 +65,8 @@ const MembershipTeam = () => {
             pr:10
           }}
         >
-          Discover how a Membership Wallet can revolutionize your business! Our Membership Wallet offers a wide range of benefits, including enhanced customer loyalty and retention. With personalized rewards and exclusive discounts, you can build strong, lasting relationships with your clientele. Through seamless communication and data-driven insights, the Membership Wallet allows you to connect with your members directly, sending tailored offers and updates.
+          Our platform offers a range of rewards, from discounts on premium products and services to exclusive access to events and resources that enhance your personal and professional life. Membership Wallet is more than just a program; it's a lifestyle that connects you with like-minded individuals who share your drive for success.
+Join us today and embark on a journey filled with possibilities. Together, we'll explore new horizons and make meaningful connections that enrich your life and career.
         </Typography>
 <Box sx={{pr:10}}>
 <Button
