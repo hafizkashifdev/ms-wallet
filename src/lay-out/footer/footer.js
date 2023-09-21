@@ -39,7 +39,9 @@ const columnStyles = {
 const Footer = () => {
 
   return (
-    <>    <footer style={{ backgroundColor: 'White', padding: '1rem',marginTop:"480px" }}>
+    <>    <footer style={{ backgroundColor: 'White', padding: '1rem',marginTop:"120px" }}>
+      <Divider sx={{borderTop: "1px solid var(--gray-scale-gray-300, #D0D5DD)",
+  backGround: "#D9DBE9"}} />
       <Container maxWidth="xl"> 
   
     <Grid container spacing={2} sx={{mt:4,}}>
@@ -80,7 +82,8 @@ const Footer = () => {
   </div>
         </Grid>
       </Grid>
-      <Divider sx={{mt:4}}/>
+      <Divider sx={{mt:4,borderTop: "1px solid var(--gray-scale-gray-300, #D0D5DD)",
+  backGround: "#D9DBE9"}}/>
       
       <Grid  className="image-grid-container" sx={{ display: 'flex' }}>
           {images.map((image, index) => (

@@ -28,11 +28,11 @@ const headersData = [
   },
   {
     label: "Offers ",
-    href: "/offers",
+    // href: "/offers",
   },
   {
     label: "Business",
-    href: "/business",
+    // href: "/business",
   },
   {
     label: "Careers",
@@ -42,6 +42,7 @@ const headersData = [
     label: "Contact Us",
     href: "/contact-us",
   },
+ 
  
 ];
 
@@ -139,7 +140,7 @@ export default function Header() {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 900
+      return window.innerWidth < 1200
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }));
     };
@@ -158,8 +159,8 @@ export default function Header() {
       <Container maxWidth="xl">
         <Grid container>
           <Grid item xs={12} sx={{ marginTop: "70px",borderRadius: "10px",boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",bgcolor:"#fff"}}>
-            <Toolbar className={toolbar} sx={{ boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",paddingLeft:{ lg:"100px",md:"30px",},
-    paddingRight: { lg:"100px",md:"30px"},
+            <Toolbar className={toolbar} sx={{ boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",paddingLeft:{ lg:"100px",md:"20px",},
+    paddingRight: { lg:"100px",md:"20px"},
     paddingTop: "20px",
     paddingBottom: "20px",}}>
               <div className={logo}>{femmecubatorLogo}</div>
@@ -244,7 +245,25 @@ export default function Header() {
   
   
   const loginButton = (
-    <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: {md:"row",xs:"column"},gap:{lg:"29px",xs:"none"} }}>
+    <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: {lg:"row",xs:"column"},gap:{lg:"18px",xs:"18px"} }}>
+      <Button sx={{borderRadius: '8px',
+  border: '1px solid var(--primary-primary-500, #7A5AF8)',
+  boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)',
+  textTransform: 'capitalize', 
+  color: 'var(--primary-primary-500, #7A5AF8)',
+  fontSize: '14px',
+  fontStyle: 'normal',
+  fontWeight: 600,
+  lineHeight: '170%',
+  mt:{lg:0,xs:2}
+
+}}
+  
+  className="text-font"
+  
+  >
+      Partner with us
+    </Button>
       <Button
         sx={{ borderRadius: '8px',
         background: 'linear-gradient(103deg, #9672FE 0%, #6A35FF 100%)',
@@ -255,7 +274,7 @@ export default function Header() {
      Try For Free   
       </Button>
       <Button
-        sx={{ color: "#344054",fontSize:"16px",textDecoration:'underline' ,textTransform:'capitalize',fontStyle:'normal',fontWeight:500,background: "transparent",
+        sx={{ color: "#344054",fontSize:"16px", mb:{lg:0,xs:2},textDecoration:'underline' ,textTransform:'capitalize',fontStyle:'normal',fontWeight:500,background: "transparent",
         '&:hover': {
           backgroundColor: 'transparent',
         },}}
