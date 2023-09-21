@@ -18,7 +18,7 @@ const UnleashEfficiency = () => {
 <Grid item lg={6} xs={12} >
 <Typography
 
-className='sub-heading-font'
+className='text-font'
   sx={{
     color: 'var(--grayscale-gray-900, #101828)',
   
@@ -33,7 +33,7 @@ className='sub-heading-font'
   Unleash Efficiency<br/> with Our Mobile App
 </Typography>
 <Typography
-className='sub-heading-font'
+className='text-font'
  sx={{
     color: 'var(--grayscale-gray-500, #667085)',
     fontFamily: 'Outfit,Outfit',
@@ -52,7 +52,7 @@ Experience our mobile application firsthand by downloading it from the App Store
 </Box>
 
 <Typography
-className='sub-heading-font'
+className='text-font'
  sx={{
     color: 'var(--grayscale-gray-500, #667085)',
     // fontFamily: 'Outfit',

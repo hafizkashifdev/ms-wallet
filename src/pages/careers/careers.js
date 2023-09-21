@@ -20,10 +20,11 @@ const Careers = () => {
 <Grid item xs={12}  sx={{mt:"180px"}}>
  
 <Typography
+className='text-font'
   sx={{
     color: '#8155FF',
     textAlign: 'center',
-    fontFamily: 'Open Sans',
+    // fontFamily: "Outfit sans-serif !important",
     fontSize: '60px',
     fontStyle: 'normal',
     fontWeight: 700,
@@ -34,10 +35,11 @@ const Careers = () => {
   Careers
 </Typography>
 <Typography
+className='text-font'
   sx={{
     color: 'var(--gray-scale-gray-500, #667085)',
     textAlign: 'center',
-    fontFamily: 'Outfit',
+    // fontFamily: 'Outfit',
     fontSize: '20px',
     fontStyle: 'normal',
     fontWeight: 500,
@@ -60,7 +62,7 @@ A career in membership wallet involves managing and enhancing digital platforms 
     mt:2,
     // border:"1px solid black",
     color: 'var(--gray-scale-gray-600, #475467)',
-    fontFamily: 'Outfit',
+    // fontFamily: 'Outfit',
     fontSize: '18px',
     fontStyle: 'normal',
     fontWeight: 500,

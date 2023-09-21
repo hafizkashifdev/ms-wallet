@@ -26,7 +26,10 @@ const countries = [
   // { value: "Germany", label: "Germany" },
   // { value: "Japan", label: "Japan" },
 ];
+
+
 const ContactUs = () => {
+  
   const connectdivStyle = {
     background: 'var(--gray-scale-gray-50, #F9FAFB)',
     borderRadius: '0px 0px 300px 300px',
@@ -47,8 +50,9 @@ const ContactUs = () => {
 
 <Grid container >
 <Grid item xs={12} sx={{mt:"140px"}}>
-<Typography variant="h6" sx={{color: '#8155FF',
-    fontFamily: 'Open Sans',
+<Typography variant="h6" 
+ className='text-font'
+sx={{color: '#8155FF',
     fontSize: '60px',
     fontStyle: 'normal',
     fontWeight: 700,
@@ -85,8 +89,9 @@ xs={12}
             <Grid container spacing={2} sx={{ px: {md:"107px",sm:"40px",xs:"10px"} ,mt:"50px"}}>
               <Grid item  lg={6} xs={12} gap={2}>
                 <InputLabel
+                className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-SemiBold",
+                    
                     fontSize: "16px",
                     py: "8px",
                   }}
@@ -96,11 +101,17 @@ xs={12}
                 <TextField
                   fullWidth
                   placeholder="Enter first name"
+                  className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-Medium",
+                      
                     fontSize: "16px",
                     background: "#F9FAFB",
                     borderRadius: "8px",
+                    "& .MuiOutlinedInput-root": {
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#8155FF"
+                      }
+                    }
                   }}
                 >
                   Enter first name
@@ -108,8 +119,9 @@ xs={12}
               </Grid>
               <Grid item lg={6} xs={12}>
                 <InputLabel
+                className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-SemiBold",
+                    
                     fontSize: "16px",
                     py: "8px",
                   }}
@@ -119,11 +131,17 @@ xs={12}
                 <TextField
                   fullWidth
                   placeholder="Enter last name"
+                  className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-Medium",
+               
                     fontSize: "16px",
                     borderRadius: "8px",
                     background: "#F9FAFB",
+                    "& .MuiOutlinedInput-root": {
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#8155FF"
+                      }
+                    }
                   }}
                 >
                   Enter last name
@@ -134,8 +152,9 @@ xs={12}
             <Grid item lg={6} xs={12} sx={{  }}>
               <InputLabel
                 fullWidth
+                className='text-font'
                 sx={{
-                  fontFamily: "Gilroy-SemiBold",
+                
                   fontSize: "16px",
                   py: "12px",
                 }}
@@ -145,11 +164,17 @@ xs={12}
               <TextField
                 fullWidth
                 placeholder="Enter email"
+                className='text-font'
                 sx={{
-                  fontFamily: "Gilroy-Medium",
+                 
                   fontSize: "16px",
                   background: "#F9FAFB",
                   borderRadius: "8px",
+                  "& .MuiOutlinedInput-root": {
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#8155FF"
+                    }
+                  }
                 }}
               >
                 Enter email
@@ -158,8 +183,9 @@ xs={12}
             </Grid>
             <Grid item lg={2} xs={12}>
                 <InputLabel
+                className='text-font'
                   sx={{
-                    fontFamily: "Gilroy, Gilroy-SemiBold",
+                   
                     fontSize: "16px",
                     py: "11px",
                   }}
@@ -169,13 +195,19 @@ xs={12}
                 <FormControl fullWidth sx={{ py: "4px" }}>
                   <Select
                     value="+44"
+                    className='text-font'
+                   
+                      
                     sx={{
                       fontSize: 16,
-                      fontFamily: "Gilroy, Gilroy-Medium",
                       borderRadius: "8px",
                       outline: "none",
                       height: "57px",
                       background: "#F9FAFB",
+                     
+                      "&.Mui-focused fieldset": {
+                        border: "#8155FF",
+                      },
                     }}
                     renderValue={(selectedValue) => (
                       <div style={{ display: "flex", alignItems: "center" }}>
@@ -201,12 +233,18 @@ xs={12}
                 <TextField
                   placeholder="xxxx xxxxxx"
                   fullWidth
+                  className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-Medium",
+                  
                     fontSize: "16px",
                     background: "#F9FAFB",
                     borderRadius: "8px",
                     height: "57px",
+                    "& .MuiOutlinedInput-root": {
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#8155FF"
+                      }
+                    }
                   }}
                 >
                   xxxx xxxxxx
@@ -215,8 +253,9 @@ xs={12}
               </Grid>
               <Grid item xs={12} sx={{px: {md:"107px",sm:"40px",xs:"10px"},mt:"30px"}}>
                 <InputLabel
+                className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-SemiBold",
+                    
                     fontSize: "16px",
                     py: "8px",
                   }}
@@ -226,11 +265,17 @@ xs={12}
                 <TextField
                   fullWidth
                   placeholder="  Enter subject"
+                  className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-Medium",
+                    
                     fontSize: "16px",
                     background: "#F9FAFB",
                     borderRadius: "8px",
+                    "& .MuiOutlinedInput-root": {
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#8155FF"
+                      }
+                    }
                   }}
                 >
                   Enter Tile{" "}
@@ -242,8 +287,9 @@ xs={12}
             <Grid container spacing={2} sx={{ px: {md:"107px",sm:"40px",xs:"10px"} ,mt:"30px"}}>
               <Grid item  lg={6} xs={12} >
                 <InputLabel
+                className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-SemiBold",
+                    
                     fontSize: "16px",
                     py: "8px",
                   }}
@@ -253,11 +299,17 @@ xs={12}
                 <TextField
                   fullWidth
                   placeholder="Enter Company"
+                  className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-Medium",
+                   
                     fontSize: "16px",
                     background: "#F9FAFB",
                     borderRadius: "8px",
+                    "& .MuiOutlinedInput-root": {
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#8155FF"
+                      }
+                    }
                    
                   }}
                 >
@@ -266,8 +318,9 @@ xs={12}
               </Grid>
               <Grid item lg={6} xs={12}>
                 <InputLabel
+                className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-SemiBold",
+                    
                     fontSize: "16px",
                     py: "8px",
                   }}
@@ -298,6 +351,9 @@ xs={12}
                       color: "#A5A7A6",
                       height: "57px",
                       background: "#F9FAFB",
+                      "&.Mui-focused fieldset": {
+                        border: "#8155FF",
+                      },
                     }}
                   >
                     <MenuItem>Ten</MenuItem>
@@ -311,8 +367,9 @@ xs={12}
            
               <Grid item xs={12} gap={2} sx={{mt:"30px"}}>
                 <InputLabel
+                className='text-font'
                   sx={{
-                    fontFamily: "Gilroy-SemiBold",
+                    
                     fontSize: "16px",
                     py: "8px",
                   }}
@@ -324,7 +381,11 @@ xs={12}
                   rows={4}
                   fullWidth
                   placeholder="Write something..."
-                  sx={{ background: "#F9FAFB",}}
+                  sx={{ background: "#F9FAFB",  "& .MuiOutlinedInput-root": {
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#8155FF"
+                    }
+                  }}}
                 />
               </Grid>
               <Grid item xs={12} gap={2} sx={{ mt: "30px" }}>
@@ -345,17 +406,18 @@ xs={12}
 
               <Grid item xs={12} gap={2} sx={{ textAlign: "center" ,mt:"48px"}}>
                 <Typography
+                className='gilroy-font '
                   sx={{
-                    fontFamily: "Gilroy-Medium",
+                    // fontFamily:"Gilroy-Medium",
                     fontSize: "18px",
-                    fontWeight: "800",
+                    fontWeight: 400,
                   }}
                 >
                   Do you have some questions about Membership Wallet?  Visit our{" "}
                   <span
+                  className='gilroy-font '
                     style={{
                       color: "#916BFE",
-                      fontFamily: "Gilroy-Medium",
                       fontSize: "18px",
                       fontWeight: "800",
                     }}
@@ -377,8 +439,9 @@ xs={12}
     </Grid>
     <Grid item> 
       <Typography
+      className='text-font'
         sx={{
-          fontFamily: "Gilroy-SemiBold",
+        
           fontSize: "13px",
           color: "#3B4A45",
         }}
@@ -386,9 +449,10 @@ xs={12}
         PHONE
       </Typography>
       <Typography
+      className='text-font'
         sx={{
           whiteSpace: "nowrap",
-          fontFamily: "Gilroy-SemiBold",
+        
           fontSize: "13px",
           color: "#916BFE",
         }}
@@ -414,8 +478,9 @@ xs={12}
     </Grid>
     <Grid item>
       <Typography
+      className='text-font'
         sx={{
-          fontFamily: "Gilroy-SemiBold",
+        
           fontSize: "13px",
           color: "#3B4A45",
         }}
@@ -423,9 +488,10 @@ xs={12}
         FAX
       </Typography>
       <Typography
+      className='text-font'
         sx={{
           whiteSpace: "nowrap",
-          fontFamily: "Gilroy-SemiBold",
+        
           fontSize: "13px",
           color: "#916BFE",
         }}
@@ -446,8 +512,9 @@ xs={12}
     </Grid>
     <Grid item>
       <Typography
+      className='text-font'
         sx={{
-          fontFamily: "Gilroy-SemiBold",
+      
           fontSize: "13px",
           color: "#3B4A45",
         }}
@@ -455,9 +522,10 @@ xs={12}
         EMAIL
       </Typography>
       <Typography
+      className='text-font'
         sx={{
           whiteSpace: "nowrap",
-          fontFamily: "Gilroy-SemiBold",
+         
           fontSize: "13px",
           color: "#916BFE",
         }}

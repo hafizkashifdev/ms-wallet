@@ -1,7 +1,8 @@
 .text-font {
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", sans-serif !important;
 }
 
-.sub-heading-font {
-  font-family: "Outfit";
+
+.gilroy-font {
+  font-family: "Gilroy-Medium" !important;
 }
