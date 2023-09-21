@@ -6,8 +6,6 @@ COPY . .
 
 RUN npm i -f
 
-ENV NODE_OPTIONS="--max-old-space-size=4096"
-
 RUN npm run build
 
 FROM node:18-alpine AS runner
