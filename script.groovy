@@ -7,10 +7,10 @@ def deployImg(){
           ]) {
             sshagent(['235250937587-SaleSites']) {
               sh """
-                ssh -o StrictHostKeyChecking=no -tt ubuntu@18.135.209.0 '
+                ssh -o StrictHostKeyChecking=no -tt ubuntu@13.40.65.211 '
                   git config --global credential.helper "store --file=/home/ubuntu/.git-credentials"
-                  echo -e "https://$USERNAME:$PASSWORD@bitbucket.org/dev-team-workspace/travelhelpsquad_salesite.git" > /home/ubuntu/.git-credentials
-                  cd travelhelpsquad_salesite
+                  echo -e "https://$USERNAME:$PASSWORD@bitbucket.org/dev-team-workspace/membershipwallet_salesite.git" > /home/ubuntu/.git-credentials
+                  cd membershipwallet_salesite
                   git pull origin master
                   if docker compose build; then
                         docker compose down
