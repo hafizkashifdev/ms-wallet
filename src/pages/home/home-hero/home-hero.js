@@ -141,7 +141,7 @@ const HomeHero = () => {
           </Typography>
           <Box
             sx={{
-              display: { lg: "flex", xs: "none" },
+              display: {xl: "flex", xs: "none" },
               position: 'absolute',
               bottom: "12%",
               right: "15%",

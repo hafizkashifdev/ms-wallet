@@ -29,7 +29,7 @@ const CardPay = () => {
       <Grid container>
        
         <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,}}>
-          <img src={mobilepayiphone} alt="frame" draggable={false}  style={{ maxWidth: '100%', height: 'auto' }} />
+          <img src={mobilepayiphone} alt="frame" draggable={false}  style={{ maxWidth: '100%', height: 'auto',width:"100%" }} />
         </Grid>
       </Grid>
     </Container>
@@ -76,9 +76,10 @@ const CardPay = () => {
         >
           With our Card Assistant, you never forget to use your card. It will show right on your lock screen when you are in a store.
         </Typography></Box>
-        <Box sx={{ maxWidth: "100%", width:"100%",marginTop: "50px",  mr:{sm:"140px",xs:"60px"} ,}}>
-          <img src={mobilepay} alt="pay-slip" style={{ maxWidth: "100%",width:"100%", marginRight:"40px" }} />
-        </Box>
+       <Box sx={{ maxWidth: "100%", width: "100%", marginTop: "50px", mr: { sm: "140px", xs: "60px" } }}>
+  <img src={mobilepay} alt="pay-slip" style={{ maxWidth: "100%", height: "auto", width: "100%", marginRight: "40px",marginTop:"30px",marginBottom:'30px' }} />
+</Box>
+
       </div>
     </Grid>
   </Grid>

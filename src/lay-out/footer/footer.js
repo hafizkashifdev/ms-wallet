@@ -49,27 +49,38 @@ const Footer = () => {
       
        <img src={flogo} alt ='foter logo'>
        </img>
-       <Typography sx={{color:'#4E4B66',fontFamily:'Outfit',fontSize:'14px',fontWeight:500,fontStyle:'normal',textTransform:'capitalize',mt:2}}>
+       <Typography className='text-font' sx={{color:'#4E4B66', fontSize:'14px',fontWeight:500,fontStyle:'normal',textTransform:'capitalize',mt:2}}>
        Copyrights © 2023 All Rights Reserved by Membership Wallet
        </Typography>
       </Grid>
         <Grid item xs={12}  sm={6} md={2} sx={columnStyles}>
-          <Typography sx={{color:'#363565',fontFamily:'Outfit',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,mr:{lg:0,xs:2}}}>Company</Typography>
-          <a href="/" className='link '>About Us</a>
-          <a href="/" className='link '>Work With Us</a>
-          <a href="/" className='link '>Find Work</a>
+          <Typography className='text-font ' sx={{color:'#363565',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,mr:{lg:0,xs:2}}}>Company</Typography>
+            <a 
+          // href="/" 
+          className='link '>About Us</a>
+            <a 
+         // href="/" 
+          className='link '>Contact us</a>
+            <a 
+         // href="/" 
+          className='link '>Careers</a>
         </Grid>
         <Grid  item xs={12} sm={6} md={3.5} style={columnStyles}>
-          <Typography  sx={{color:'#363565',fontFamily:'Outfit',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2}}>Resolution Centre</Typography>
-          <a href="/" className='link'>Data Policy</a>
-          <a href="/" className='link '>Privacy Policy</a>
-          <a href="/" className='link '>Social Media Links</a>
-          <a href="/" className='link'>Cookie Policy</a>
-          <a href="/" className='link '>Contact Us</a>
+          <Typography className='text-font '   sx={{color:'#363565', fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2}}>Legal</Typography>
+            <a 
+         // href="/" 
+          className='link'>Data Policy</a>
+            <a 
+         // href="/" 
+          className='link '>Privacy Policy</a>
+            <a 
+         // href="/" 
+          className='link'>Cookie Policy</a>
+       
        
         </Grid>
         <Grid item xs={12} sm={6} md={2} style={columnStyles}>
-        <Typography sx={{color:'#363565',fontFamily:'Outfit',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',}}>
+        <Typography className='text-font'  sx={{color:'#363565',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',}}>
     Install App
   </Typography>
   <div className='appIcons'>
@@ -106,12 +117,12 @@ const Footer = () => {
      <Grid container sx={{ backgroundColor: '#8155FF', color: 'white', padding: '1rem' }}>
      <Container maxWidth="xl" sx={{ display: 'flex', justifyContent: 'center' }}>
        <Grid item xs={12} md={6} xl={8} sx={{ display: 'flex', alignItems: 'center' }}>
-         <Typography sx={{ color: '#FFFFFF', fontFamily: 'Outfit', fontSize: '14px', fontWeight: 400, fontStyle: 'normal', textTransform: 'capitalize' }}>
+         <Typography className='text-font' sx={{ color: '#FFFFFF',  fontSize: '14px', fontWeight: 400, fontStyle: 'normal', textTransform: 'capitalize' }}>
            © 2023 All Rights Reserved by Membership Wallet
          </Typography>
        </Grid>
        <Grid item xs={12} md={6} xl={4} sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-         <Typography sx={{ color: '#FFFFFF', fontFamily: 'Outfit', fontSize: '14px', fontWeight: 400, fontStyle: 'normal', textTransform: 'capitalize', display: { xs: 'none', md: 'block' } }}>
+         <Typography className='text-font' sx={{ color: '#FFFFFF',fontSize: '14px', fontWeight: 400, fontStyle: 'normal', textTransform: 'capitalize', display: { xs: 'none', md: 'block' } }}>
            <span > Cookies Policy    </span> | <span> Privacy Policy    </span> | <span>    Terms & Conditions </span>
          </Typography>
        </Grid>

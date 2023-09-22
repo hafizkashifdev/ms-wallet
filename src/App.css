@@ -6,3 +6,12 @@
 .gilroy-font {
   font-family: "Gilroy-Medium" !important;
 }
+
+/* Define styles for lg screens (1280px and above) */
+@media screen and (min-width: 1280px) {
+  .text-fontbr::after {
+    content: "";
+    display: block;
+    height: 1rem; /* Adjust the height as needed */
+  }
+}

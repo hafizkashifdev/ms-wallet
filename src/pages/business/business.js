@@ -219,8 +219,10 @@ sx={{
       </Grid>
     </Container>
 
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" >
   <Grid container
+
+  className='background-svg '
   sx={{ 
     
     // border: "1px solid #BA88FF" ,borderRadius:'8px'
@@ -229,36 +231,20 @@ sx={{
   // sx={gridStyle}
   
   >
-  {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1397"
-        height="399"
-        viewBox="0 0 1397 399"
-        style={svgStyle} // Apply the svgStyle to the SVG
-      ><svg xmlns="http://www.w3.org/2000/svg" width="1397" height="399" viewBox="0 0 1397 399" fill="none">
-      <path d="M1 362.301H2H1ZM1 37.1993H0H1ZM36.6993 2.5H1360.3V0.5H36.6993V2.5ZM1395 37.1993V362.301H1397V37.1993H1395ZM1360.3 397H36.6993V399H1360.3V397ZM2 362.301V37.1993H0V362.301H2ZM36.6993 397C17.5354 397 2 381.465 2 362.301H0C0 382.569 16.4308 399 36.6993 399V397ZM1395 362.301C1395 381.465 1379.46 397 1360.3 397V399C1380.57 399 1397 382.569 1397 362.301H1395ZM1360.3 2.5C1379.46 2.5 1395 18.0354 1395 37.1993H1397C1397 16.9308 1380.57 0.5 1360.3 0.5V2.5ZM36.6993 0.5C16.4308 0.5 0 16.9308 0 37.1993H2C2 18.0354 17.5354 2.5 36.6993 2.5V0.5Z" fill="url(#paint0_linear_23208_9703)" fill-opacity="0.7"/>
-      <defs>
-        <linearGradient id="paint0_linear_23208_9703" x1="1" y1="1.5" x2="145.389" y2="685.882" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#9A35FF"/>
-          <stop offset="0.513577" stop-color="#7B78FF" stop-opacity="0"/>
-          <stop offset="1" stop-color="#60B3FF"/>
-        </linearGradient>
-      </defs>
-      
-    </svg>
-     </svg> */}
+
+
 <Grid item lg={7} xs={12} sx={{ alignItems: "center", justifyContent: "center" }}>
   <Typography
     className='text-font'
     sx={{
-      textAlign: "left",
+      textAlign: {lg:"left",xs:"center"},
       fontSize: "30px",
       fontStyle: "normal",
       fontWeight: 700,
       lineHeight: "60px",
       color: "#1D2939",
       letterSpacing: "-0.64px",
-      mt:10
+      mt:{lg:10,xs:2}
     }}
   >
     From <span style={{ color: '#8155FF' }}>cost-per-click</span> through cost-per-purchase
@@ -267,7 +253,7 @@ sx={{
     className='text-font'
     sx={{
       color: "var(--gray-scale-gray-500, #667085)",
-      textAlign: "left",
+      textAlign: {lg:"left",xs:"center"},
       fontSize: "20px",
       fontStyle: "normal",
       fontWeight: 400,
@@ -277,6 +263,9 @@ sx={{
   >
     Stocard can track visits and purchases post-click, making end-to-end attribution come true. The ROI question answered in detail through first-party data.
   </Typography>
+  <Box sx={{display:'flex',justifyContent:{lg:"flex-start",xs:"center"}}}>
+
+ 
   <Button
     sx={{
       borderRadius: '8px',
@@ -285,21 +274,32 @@ sx={{
       padding: "14px 24px",
       color: "#ffffff",
       textTransform: 'capitalize',
-      mt: "36px"
+      mt: "36px",
+      textAlign: {lg:"left",xs:"center"},
     }}
   >
     Get in touch
   </Button>
+  </Box>
 </Grid>
 
-
-    <Grid item lg={5} xs={12}>
-      <Grid container justifyContent="center" alignItems="center" style={{ height: "100%" }}>
-        <Grid item>
-          <img src={map} alt="map" />
-        </Grid>
-      </Grid>
+<Grid item lg={5} xs={12} >
+  <Grid
+    container
+    justifyContent="center"
+    alignItems="center"
+    sx={{ height: "100%" ,display:{lg:"flex",xs:"none"}}}
+  >
+    <Grid item>
+      <img
+        src={map}
+        alt="map"
+        sx={{ maxWidth: "300px", width: "100%" }}
+      />
     </Grid>
+  </Grid>
+</Grid>
+
   </Grid>
 </Container>
 
