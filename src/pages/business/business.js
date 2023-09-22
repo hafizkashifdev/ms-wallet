@@ -104,18 +104,18 @@ className='text-font'
             style={{ width: "100%", maxWidth: "100%" }} 
           />
         </Grid>
-        <Grid item sx={{display:'flex',flexDirection:"column",justifyContent:'center',mt:"190px"}}>
+        <Grid item sx={{display:'flex',flexDirection:"column",justifyContent:'center',mt:{lg:"190px",xs:"100px"}}}>
 <Typography
 className='text-font'
       sx={{
         color: '#8155FF',
         textAlign: 'center',
-        fontSize: '60px',
+        fontSize: {lg:'60px',xs:'54px'},
         fontStyle: 'normal',
         fontWeight: 700,
         lineHeight: '72px',
         letterSpacing: '-1.2px',
-        mt: "24px",
+        mt: {lg:"24px",xs:"0px"},
       }}
     >
       Why work with Membership Wallet

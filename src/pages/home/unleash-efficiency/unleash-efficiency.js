@@ -29,13 +29,14 @@ className='text-font'
     fontWeight: 500,
     lineHeight: '125%', 
     letterSpacing: '-0.96px',
-    textAlign:{xl:"left",xs:"center"},
+    textAlign:"left",
     display:{lg:'flex',xs:"none"}
     
   }}
 >
   Unleash Efficiency <br />with Our Mobile App
 </Typography>
+<Box sx={{display:{lg:'none',xs:"flex"},justifyContent:"center"}}>
 <Typography
 
 className='text-font'
@@ -48,11 +49,12 @@ className='text-font'
     lineHeight: '125%', 
     letterSpacing: '-0.96px',
     textAlign:"center",
-    display:{lg:'none',xs:"flex"}
+    
   }}
 >
   Unleash Efficiency with Our Mobile App
 </Typography>
+</Box>
 <Typography
 className='text-font'
  sx={{
@@ -69,6 +71,7 @@ className='text-font'
 >
 Experience our mobile application firsthand by downloading it from the App Store or <br/>Google Play. Access our powerful features on the go and stay connected to your business <br/>wherever you are.
 </Typography>
+<Box sx={{display:{lg:'none',xs:"flex"},justifyContent:"center"}}>
 <Typography
 className='text-font'
  sx={{
@@ -84,8 +87,8 @@ className='text-font'
   }}
 >
 Experience our mobile application firsthand by downloading it from the App Store or Google Play. Access our powerful features on the go and stay connected to your business <br/>wherever you are.
-</Typography>
-<Box sx={{ mt: "48px", justifyContent: { lg: 'flex-start', xs: 'center' }, display: 'flex' }}>
+</Typography></Box>
+<Box sx={{ mt: "48px", display: 'flex',justifyContent: { lg: 'flex-start', xs: 'center' },  }}>
   <img src={avatorimg} alt="avotor" />
 </Box>
 
@@ -122,7 +125,7 @@ className='text-font'
 Join our growing family of members who have found an easier path and discovered a seamless solution that simplifies their journey.
 </Typography>
 
-<Box sx={{ display: 'flex', gap: '16px', mt: { md: "56px", xs: "34px" },   flexDirection: { sm: "row", xs: "column" }, justifyContent: { md: "flex-start", xs: "center" } }}>
+<Box sx={{ display: 'flex', gap: '16px', mt: { md: "56px", xs: "34px" },   flexDirection: { sm: "row", xs: "column" }, justifyContent: { lg: "flex-start", xs: "center" } }}>
   <Button
     variant="contained"
     sx={{

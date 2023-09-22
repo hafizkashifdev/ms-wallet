@@ -44,22 +44,28 @@ const HomeHero = () => {
           >
             Discover the ultimate solution for managing your finances effortlessly on the go. Our mobile wallet app empowers you to find your financial needs with ease, security, and convenience. Download it now!
           </Typography>
-          <Box sx={{ mt: { md: "56px", xs: "34px" }, display: "flex", flexDirection: { md: "row", xs: "column" }, justifyContent: { md: "flex-start", xs: "center" } }}>
+          <Box
+  sx={{
+    mt: { md: "56px", xs: "34px" },
+    display: "flex",
+    flexDirection: { md: "row", xs: "column" },
+    justifyContent: { md: "flex-start", xs: "center" },
+    alignItems: "center", 
+  }}
+>
   <TextField
     fullWidth
     sx={{
-      display: 'flex',
       width: '100%',
       maxWidth: '539px',
       minHeight: '56px',
-      alignItems: 'center',
       gap: '10px',
       flexShrink: 0,
       border: "1px solid #E5E5E5",
       borderRadius: '8.889px',
       background: 'rgba(255, 255, 255, 0.10)',
       boxShadow: '0px 8.88889px 15.55555px 0px rgba(0, 0, 47, 0.10)',
-      "& fieldset": { border: "none" }
+      "& fieldset": { border: "none" },
     }}
     InputProps={{
       startAdornment: (
@@ -88,6 +94,7 @@ const HomeHero = () => {
     }}
   />
 </Box>
+
 
 <Box sx={{ display: 'flex', gap: '16px', mt: { md: "56px", xs: "34px" },   flexDirection: { sm: "row", xs: "column" }, justifyContent: { md: "flex-start", xs: "center" } }}>
   <Button
