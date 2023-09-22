@@ -12,13 +12,8 @@ def deployImg(){
                   echo -e "https://$USERNAME:$PASSWORD@bitbucket.org/dev-team-workspace/membershipwallet_salesite.git" > /home/ubuntu/.git-credentials
                   cd membershipwallet_salesite
                   git pull origin master
-                  if docker compose build; then
-                        docker compose down
-                        docker compose up -d
-                        docker system prune -a -f
-                  else
-                        echo "Build failed. The old container is still running."
-                  fi
+                  docker compose up -d --build
+                  docker system prune -a -f
                 '
               """
             }
