@@ -268,8 +268,8 @@ export default function Header() {
         sx={{ borderRadius: '8px',
         background: 'linear-gradient(103deg, #9672FE 0%, #6A35FF 100%)',
         boxShadow: '0px 17px 22px -10px rgba(24, 8, 70, 0.10)',padding:"10px 20px",color:"#ffffff" ,textTransform:'capitalize'}}
-        component={RouterLink}
-        to="/login"
+        // component={RouterLink}
+        // to="/login"
       >
      Try For Free   
       </Button>
@@ -279,8 +279,8 @@ export default function Header() {
           backgroundColor: 'transparent',
         },}}
         className="text-font"
-        component={RouterLink}
-        to="/login"
+        // component={RouterLink}
+        // to="/login"
       >
  Login
       </Button>
