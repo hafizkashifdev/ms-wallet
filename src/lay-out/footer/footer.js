@@ -45,7 +45,7 @@ const Footer = () => {
       <Container maxWidth="xl"> 
   
     <Grid container spacing={2} sx={{mt:4,}}>
-      <Grid item xs={12} sm={6} md={4} sx={columnStyles} >
+      <Grid item xs={12} sm={6} md={6} sx={columnStyles} >
       
        <img src={flogo} alt ='foter logo'>
        </img>
@@ -65,7 +65,7 @@ const Footer = () => {
          // href="/" 
           className='link '>Careers</a>
         </Grid>
-        <Grid  item xs={12} sm={6} md={3.5} style={columnStyles}>
+        <Grid  item xs={12} sm={6} md={2} style={columnStyles}>
           <Typography className='text-font '   sx={{color:'#363565', fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2}}>Legal</Typography>
             <a 
          // href="/" 
