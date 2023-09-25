@@ -53,7 +53,7 @@ const Offers = () => {
 </Grid>
     </Grid>
     </Container>
-    <Container>
+    <Container maxWidth="xl">
       <ButtonList/>
     </Container>
     <Container>

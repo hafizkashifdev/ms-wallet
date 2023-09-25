@@ -39,13 +39,10 @@ const ContactUs = () => {
 
   return (
     <>
+
+CookiePolicy
     <div style={connectdivStyle}>
-    <Container maxWidth="xxl">
-<Box sx={{display:{lg:"flex",xs:"none"},pr:"50px",position:'relative',}}>
- <img src={condot} alt="img" style={{marginLeft:"auto",position:"absolute",right:70,top:100}}>
-  </img>
- </Box>
-    </Container>
+   
       <Container maxWidth="lg">
 
 <Grid container >

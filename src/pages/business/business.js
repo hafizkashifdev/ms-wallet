@@ -10,7 +10,9 @@ import arrowgif from "../../assets/business/arrowplan.gif"
 import Personalization from "../../assets/business/Personalization.gif"
 import datarich from "../../assets/business/datarich.gif"
 import phone from "../../assets/business/phone.gif"
-import map from "../../assets/business/Map.svg"
+import map from "../../assets/business/mp.png"
+import mapbg from "../../assets/business/fmapbg.png"
+import "./business.css"
 
 const cardData = [
   {
@@ -36,18 +38,25 @@ const cardData = [
   },
 ];
 
-const svgStyle = {
-  width: '100%',
-  height: '100%',
-  fill: 'none',
-};
+// const svgStyle = {
+//   width: '100%',
+//   height: '100%',
+//   fill: 'none',
+// };
 
-const gridStyle = {
-  border: '2px solid black', // Adjust border properties as needed
-  position: 'relative', // Needed for absolute positioning of SVG
-};
+// const gridStyle = {
+//   border: '2px solid black',
+//   position: 'relative', 
+// };
 
-
+// const containerStyle = {
+//   backgroundImage: `url(${mapbg})`,
+//   backgroundRepeat: 'no-repeat',
+//   backgroundSize: 'cover', 
+//   // paddingTop: '4px', 
+//   // paddingBottom: '4px', 
+//   marginTop:"187px",
+// };
 
 const Business = () => {
   return (
@@ -132,6 +141,7 @@ sx={{
   lineHeight: '32px',
   letterSpacing: '0.2px',
   mt:"16px"
+
 }}
     >
     Tailor features to meet your unique needs
@@ -145,10 +155,14 @@ sx={{
 
     </Container>
     <Container maxWidth="xl">
-  <Grid container justifyContent="center" alignItems="center" sx={{mt:"78px"}}>
-  
-    {cardData.map((card, index) => (
-      <Grid item xs={12} sm={6} md={3} key={index} sx={{  p: 2 }}>
+    <Grid container  sx={{ mt: "78px"
+    
+    // ,border:"1px solid red",
+    
+    }}>
+  {cardData.map((card, index) => (
+    <Grid item xs={12} sm={6} md={3} key={index} sx={{ p: 2, display:'flex', justifyContent:"center",alignItems:"center"}}>
+      {/* Rest of your card code */}
         <Card
           sx={{
             borderRadius: "20px",
@@ -160,24 +174,56 @@ sx={{
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
+            position: "relative",
+            zIndex: 1,
+           
           }}
         >
-              <CardMedia
-                component="img"
-                alt={card.title}
-                height="152"
-                image={card.image}
-                sx={{
-                  width: "152px",
-                  height: "152px",
+
+           <CardMedia
+  component="img"
+  src={card.image}
+  alt={card.title}
+  height="152"
+  sx={{
+    width: "152px", height: "152px",
                   flexShrink: 0,
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                   backgroundImage: `url(${circlebg})`,
                   backgroundSize: "cover",
-                }}
-              />
+    // position: "relative", zIndex: 2, maxWidth: "100%", height: "auto"
+    // Ensure the image is above the overlay
+  }}
+/>
+{/* <div className="overlay" ></div> */}
+
+              {/* <CardMedia
+  component="img"
+  // alt={card.title}
+  src={card.image}
+  alt={card.title}
+  height="152"
+  sx={{
+    width: "152px",
+    height: "152px",
+    flexShrink: 0,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundSize: "cover",
+    position: "relative", zIndex: 2, maxWidth: "100%", 
+    
+  }}
+
+ className="overlay" 
+// <img
+
+//   style={{ }}
+// />
+/> */}
+
               <CardContent>
                 <Typography
                   gutterBottom
@@ -219,89 +265,87 @@ sx={{
       </Grid>
     </Container>
 
-    <Container maxWidth="lg" >
-  <Grid container
-
-  className='background-svg '
-  sx={{ 
+    {/* <Container maxWidth="lg"
     
-    // border: "1px solid #BA88FF" ,borderRadius:'8px'
+    // sx={containerStyle}
+   
     
-    mt:"185px"}}
-  // sx={gridStyle}
+    > */}
+  <Container maxWidth="lg"  
   
-  >
+  sx={{border:{lg:"2px solid #9A35FF",xs:'none'},mt:"178px",borderRadius:"18px"}}>
+  <Grid container
+  // sx={{border:"1px solid black",}}
+>
 
 
-<Grid item lg={7} xs={12} sx={{ alignItems: "center", justifyContent: "center" }}>
-  <Typography
-    className='text-font'
-    sx={{
-      textAlign: {lg:"left",xs:"center"},
-      fontSize: "30px",
-      fontStyle: "normal",
-      fontWeight: 700,
-      lineHeight: "60px",
-      color: "#1D2939",
-      letterSpacing: "-0.64px",
-      mt:{lg:10,xs:2}
-    }}
-  >
-    From <span style={{ color: '#8155FF' }}>cost-per-click</span> through cost-per-purchase
-  </Typography>
-  <Typography
-    className='text-font'
-    sx={{
-      color: "var(--gray-scale-gray-500, #667085)",
-      textAlign: {lg:"left",xs:"center"},
-      fontSize: "20px",
-      fontStyle: "normal",
-      fontWeight: 400,
-      lineHeight: "30px",
-      mt: "16px"
-    }}
-  >
-    Stocard can track visits and purchases post-click, making end-to-end attribution come true. The ROI question answered in detail through first-party data.
-  </Typography>
-  <Box sx={{display:'flex',justifyContent:{lg:"flex-start",xs:"center"}}}>
+<Grid item lg={8} xs={12} sx={{ alignItems: "center", justifyContent: "center",pl:{lg:"60px",xs:"0px"} }}>
+<Typography
+  className='text-font'
+  sx={{
+    textAlign: {lg:"left",xs:"center"},
+    fontSize: "30px",
+    fontStyle: "normal",
+    fontWeight: 700,
+    lineHeight: "60px",
+    color: "#1D2939",
+    letterSpacing: "-0.64px",
+    mt:{lg:"60px",xs:2}
+  }}
+>
+  From <span style={{ color: '#8155FF' }}>cost-per-click</span> through cost-per-purchase
+</Typography>
+<Typography
+  className='text-font'
+  sx={{
+    color: "var(--gray-scale-gray-500, #667085)",
+    textAlign: {lg:"left",xs:"center"},
+    fontSize: "20px",
+    fontStyle: "normal",
+    fontWeight: 400,
+    lineHeight: "30px",
+    mt: "16px"
+  }}
+>
+  Stocard can track visits and purchases post-click, making end-to-end attribution come true. The ROI question answered in detail through first-party data.
+</Typography>
+<Box sx={{display:'flex',justifyContent:{lg:"flex-start",xs:"center"}}}>
 
- 
-  <Button
-    sx={{
-      borderRadius: '8px',
-      background: 'linear-gradient(103deg, #9672FE 0%, #6A35FF 100%)',
-      boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)',
-      padding: "14px 24px",
-      color: "#ffffff",
-      textTransform: 'capitalize',
-      mt: "36px",
-      textAlign: {lg:"left",xs:"center"},
-    }}
-  >
-    Get in touch
-  </Button>
-  </Box>
+
+<Button
+  sx={{
+    borderRadius: '8px',
+    background: 'linear-gradient(103deg, #9672FE 0%, #6A35FF 100%)',
+    boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)',
+    padding: "14px 24px",
+    color: "#ffffff",
+    textTransform: 'capitalize',
+    mt: "36px",
+    mb:{lg:"82px",xs:"2px"},
+    textAlign: {lg:"left",xs:"center"},
+  }}
+>
+  Get in touch
+</Button>
+</Box>
 </Grid>
 
-<Grid item lg={5} xs={12} >
-  <Grid
-    container
-    justifyContent="center"
-    alignItems="center"
-    sx={{ height: "100%" ,display:{lg:"flex",xs:"none"}}}
-  >
-    <Grid item>
-      <img
-        src={map}
-        alt="map"
-        sx={{ maxWidth: "300px", width: "100%" }}
-      />
+<Grid item lg={4} xs={12}>
+      <Grid container justifyContent="center" alignItems="center" sx={{ height: "100%", display:  "flex" }}>
+        <Grid item>
+          <img
+            src={map}
+            className='map-img'
+            alt="map"
+            sx={{ maxWidth: "100%", width: "100%", maxHeight: "100%", height: "auto" }}
+          />
+        </Grid>
+      </Grid>
     </Grid>
-  </Grid>
-</Grid>
 
-  </Grid>
-</Container>
+</Grid>
+  </Container>
+{/* </Container> */}
 
 </>
   )

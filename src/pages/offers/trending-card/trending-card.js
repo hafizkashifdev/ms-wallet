@@ -1,6 +1,9 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, Typography, Button, Box, SvgIcon } from '@mui/material';
+import {  Typography, Button, Box, SvgIcon } from '@mui/material';
 import salec from "../../../assets/home/group.svg"
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 
 
 const  TrendingCard = (sale) => {

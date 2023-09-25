@@ -7,6 +7,7 @@ import Business from "./pages/business/business";
 import Careers from "./pages/careers/careers";
 import ContactUs from "./pages/contact-us/contact-us";
 import Layout from "./lay-out/lay-out";
+import CookiePolicy from "./pages/cookie-policy/cookie-policy";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/business" element={<Business />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/cockie-policy" element={<CookiePolicy />} />
         </Routes>
       </Layout>
     </Router>

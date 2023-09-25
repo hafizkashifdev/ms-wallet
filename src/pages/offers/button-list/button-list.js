@@ -3,47 +3,47 @@ import { Button, Popover, Typography, Box } from '@mui/material';
 
 const buttons = [
     {
-      title: 'Button 1',
+      title: 'Food & Drink',
       data: 'Data for Button 1',
-      items: ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
+      items: ['Item 1', 'Breweries, Wineries & Distilleries', 'Cafes & Treats', 'Groceries & Markets','Bars','In-Store & Delivery','Groceries','Meal Kits','All Food'],
     },
     {
-      title: 'Button 2',
+      title: 'Fashion',
       data: 'Data for Button 2',
-      items: ['Item 5', 'Item 6', 'Item 7', 'Item 8'],
+      items: ['Clothing', 'Designer', 'Shoes', 'Accessories','Jewelry','Bags','Sunglasses','Lingerie & Underwear','Swimwear','Activewear','Menswear','All Fashion'],
     },
     {
-      title: 'Button 3',
+      title: 'Technology',
       data: 'Data for Button 3',
-      items: ['Item 9', 'Item 10', 'Item 11', 'Item 12'],
+      items: ['Entertainment', 'Travel & Lodging', 'Digital Subscriptions', 'Daily Essentials','Eye Care','Student Insurance','All Lifestyle'],
     },
     {
-        title: 'Button 4',
+        title: 'Lifestyle',
         data: 'Data for Button 4',
-        items: ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
+        items: ['Massage', 'Makeup', 'Skincare', 'Salons','Cosmetic Procedures','Brows & Lashes','Hair Removal','Hair & Styling','Spas','Nail Salons','Blowouts & Styling','Makeup','Tanning','Face & Skin Care'],
       },
       {
-        title: 'Button 5',
+        title: 'Beauty & Spa',
         data: 'Data for Button 5',
-        items: ['Item 5', 'Item 6', 'Item 7', 'Item 8'],
+        items: ['Automotive', 'Car wash', 'Electric Chargers'],
       },
       {
-        title: 'Button 6',
+        title: 'Transport',
         data: 'Data for Button 6',
-        items: ['Item 9', 'Item 10', 'Item 11', 'Item 12'],
+        items: ['Restaurants', 'Breweries, Wineries & Distilleries', 'Cafes & Treats', 'Groceries & Markets','Bars','In-Store & Delivery','Groceries','Meal Kits','All Food'],
       },
       {
-        title: 'Button 7',
+        title: 'Health & Fitness',
         data: 'Data for Button 7',
-        items: ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
+        items: ['Family vacations', 'Big city vacations', 'Europe Tours', 'Asia & Pacific Tours','Casino','Travel & Lodging'],
       },
       {
-        title: 'Button 8',
+        title: 'Travel & Hotel',
         data: 'Data for Button 8',
-        items: ['Item 5', 'Item 6', 'Item 7', 'Item 8'],
+        items: ['Family vacations', 'Big city vacations', 'Europe Tours', 'Asia & Pacific Tours','Casino','Travel & Lodging'],
       },
       {
-        title: 'Button 9',
+        title: 'Membership & Loyalty Cards',
         data: 'Data for Button 9',
         items: ['Item 9', 'Item 10', 'Item 11', 'Item 12'],
       },
@@ -84,7 +84,19 @@ const ButtonList = () => {
             style={{
               color: selectedButton === index ? 'blue' : 'black',
               fontWeight: selectedButton === index ? 'bold' : 'normal',
+              textTransform:"capitalize"
             }}
+            className='text-font'
+            sx={{
+              color: 'var(--gray-scale-gray-500, #667085)',
+              fontFamily: 'Outfit',
+              fontSize: '16px',
+              fontStyle: 'normal',
+              fontWeight: 500,
+              lineHeight: 'normal',
+              letterSpacing: '0.8px',
+            }}
+            
           >
             {button.title}
           </Button>
@@ -102,11 +114,33 @@ const ButtonList = () => {
             }}
           >
             <Box p={2}>
-              <Typography variant="subtitle1" style={{ color: 'black', marginBottom: '10px' }}>
+              <Typography 
+              className='text-font'
+              variant="subtitle1" sx={{
+  color: '#35ACFE',
+  fontFamily: 'Outfit',
+  fontSize: '18px',
+  fontStyle: 'normal',
+  fontWeight: 600,
+  lineHeight: 'normal',
+  letterSpacing: '0.9px',
+}}
+>
                 {button.data}
               </Typography>
               {selectedButton === index && button.items.map((item, itemIndex) => (
-                <Typography key={itemIndex} style={{ color: 'black' }}>
+                <Typography key={itemIndex} 
+                className='text-font'
+                sx={{
+                  color: 'var(--gray-scale-gray-500, #667085)',
+                  height: '24px',
+  paddingRight: '0px',
+                  fontSize: '14px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  lineHeight: '24px',
+                }}
+                >
                   {item}
                 </Typography>
               ))}
