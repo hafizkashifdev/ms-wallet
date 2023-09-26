@@ -40,7 +40,7 @@ const ContactUs = () => {
   return (
     <>
 
-CookiePolicy
+
     <div style={connectdivStyle}>
    
       <Container maxWidth="lg">
