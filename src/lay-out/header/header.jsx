@@ -18,8 +18,7 @@ import Container from "@mui/material/Container";
 // import ListItemText from "@mui/material/ListItemText";
 // import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Divider, Grid } from "@mui/material";
-import { useLocation } from "react-router-dom";
-
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const headersData = [
   {
@@ -100,6 +99,7 @@ const useStyles = makeStyles(() => ({
 
 export default function Header() {
   const location = useLocation();
+  const navigate = useNavigate();
   // const [isButtonActive, setIsButtonActive] = useState(false);
   const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
   // const [drawerOpenn, setDrawerOpen] = useState(false);
@@ -154,6 +154,17 @@ export default function Header() {
     };
   }, []);
 
+
+ 
+ 
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, [location]);
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
   const displayDesktop = () => {
     return (
       <Container maxWidth="xl">
@@ -163,7 +174,7 @@ export default function Header() {
     paddingRight: { lg:"100px",md:"20px"},
     paddingTop: "20px",
     paddingBottom: "20px",}}>
-              <div className={logo}>{femmecubatorLogo}</div>
+              <Link onClick={() => handleNavigation('/')} className={logo}>{femmecubatorLogo}</Link>
               <div>{getMenuButtons()}</div>
               <div>
                {loginButton}
@@ -186,7 +197,7 @@ export default function Header() {
         sx={{ marginTop: "52px",borderRadius: "10px",boxShadow: "0px 7px 18px 0px rgba(0, 0, 24, 0.12)",bgcolor:"#fff"}}
         
         >
-          <div>{femmecubatorLogo}</div>
+          <Link onClick={() => handleNavigation('/')} className={logo}>{femmecubatorLogo}</Link>
           <div style={{ flex: 1 }}></div>
           <IconButton
             {...{
@@ -313,7 +324,7 @@ export default function Header() {
   };
   
   const femmecubatorLogo = (
-    <img src={logoimg} className="logo" alt="logo"></img>
+    <img src={logoimg} className="logo" alt="logo" style={{cursor:'pointer'}}></img>
   );
 
   const getMenuButtons = () => {

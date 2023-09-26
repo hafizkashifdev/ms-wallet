@@ -30,7 +30,8 @@
 .link {
     /* ... Other properties ... */
     position: relative;
-    transition: color 0.3s;
+    /* transition: color 0.3s; */
+    color: #4E4B66;
   }
   
   .link:hover {

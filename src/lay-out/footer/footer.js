@@ -60,41 +60,43 @@ const Footer = () => {
     <Grid container spacing={2} sx={{mt:4,}}>
       <Grid item xs={12} sm={6} md={6} sx={columnStyles} >
       
-       <img src={flogo} alt ='foter logo'>
-       </img>
+      <Link  onClick={() => handleNavigation('/')} style={{ textDecoration: 'none' ,cursor:"pointer"}}>
+                <img src={flogo} alt="foter logo" />
+              </Link>
        <Typography className='text-font' sx={{color:'#4E4B66', fontSize:'14px',fontWeight:500,fontStyle:'normal',textTransform:'capitalize',mt:2}}>
        Copyrights © 2023 All Rights Reserved by Membership Wallet
        </Typography>
       </Grid>
         <Grid item xs={12}  sm={6} md={2} sx={columnStyles}>
-          <Typography className='text-font ' sx={{color:'#363565',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,mr:{lg:0,xs:2}}}>Company</Typography>
+          <Typography className='text-font ' sx={{color:' #4E4B66',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,mr:{lg:0,xs:2}}}>Company</Typography>
             <Link
           // href="/" 
-          className='link '  sx={{textDecoration:"none"}}>About Us</Link>
+          className="text-font link"  sx={{textDecoration:"none",mt:"20px",color:"#4E4B66"}}>About Us</Link>
             <Link 
            onClick={() => handleNavigation('/contact-us')} 
-          className='link ' sx={{textDecoration:"none"}}>Contact us</Link>
+           className="text-font link"  sx={{textDecoration:"none",mt:"20px",color:"#4E4B66"}}>Contact us</Link>
             <Link 
          onClick={() => handleNavigation('/careers')} 
-          className='link '  sx={{textDecoration:"none"}}>Careers</Link>
+         className="text-font link"  sx={{textDecoration:"none",mt:"20px",color:"#4E4B66"}}>Careers</Link>
         </Grid>
         <Grid  item xs={12} sm={6} md={2} style={columnStyles}>
-          <Typography className='text-font ' sx={{mb:2,color:'#363565', fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2}}  >Legal</Typography>
+          <Typography className='text-font ' sx={{mb:2,color:' #4E4B66', fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',}}  >Legal</Typography>
             <Link 
-            sx={{color:'#363565', fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,textDecoration:"none"}}
+          
          // href="/" 
-          className='link'  onClick={() => handleNavigation('/data-policy')} >Data Policy</Link>
+         className="text-font link"  sx={{textDecoration:"none",mt:"20px",color:"#4E4B66"}} onClick={() => handleNavigation('/data-policy')} >Data Policy</Link>
             <Link 
-            sx={{textDecoration:"none"}}
+            sx={{textDecoration:"none",mt:"20px",color:"#4E4B66"}}
             
          // href="/" 
-          className='link '  onClick={() => handleNavigation('/privacy-policy')} 
-          sx={{textDecoration:"none"}}
+         className="text-font link"  onClick={() => handleNavigation('/privacy-policy')} 
+        
            >Privacy Policy</Link>
             <Link 
-            sx={{textDecoration:"none"}}
+            className="text-font link"
+            sx={{textDecoration:"none",mt:"20px",color:"#4E4B66"}}
          // href="/" 
-          className='link'  onClick={() => handleNavigation('/cockie-policy')}  >Cookie Policy</Link>
+          onClick={() => handleNavigation('/cockie-policy')}  >Cookie Policy</Link>
        
        
         </Grid>
