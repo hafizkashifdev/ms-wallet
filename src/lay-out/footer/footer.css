@@ -34,7 +34,7 @@
   }
   
   .link:hover {
-    color: #6938EF;
+    color: #4E4B66;
   }
   
   /* Animation for the underline */
@@ -48,13 +48,14 @@
     background-color: transparent;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 1.5s ease, background-color 1.5s ease;
+    
   }
   
   .link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-    background-color: #363565;
+    background-color: #4E4B66;
   }
   
 

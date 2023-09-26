@@ -81,8 +81,6 @@ xs={12}
   
 }}
 >
-
-        
             <Grid container spacing={2} sx={{ px: {md:"107px",sm:"40px",xs:"10px"} ,mt:"50px"}}>
               <Grid item  lg={6} xs={12} gap={2}>
                 <InputLabel

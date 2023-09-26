@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container'; 
 import flogo from '../../assets/flog.svg';
 import googleiconfooter from '../../assets/fappstore.svg';
 import playicon from '../../assets/playfg.svg';
-import { Typography } from '@mui/material';
+import { Link, Typography } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import fbIcon from '../../assets/icon/fbicon.svg';
 import instaIcon from '../../assets/icon/insta.svg';
@@ -12,6 +12,8 @@ import linkedinIcon from '../../assets/icon/linkin.svg';
 import twitterIcon from '../../assets/icon/twicon.svg';
 import youtubeIcon from '../../assets/icon/youtube.svg';
 import './footer.css'
+// import { useLocation, import { useNavigate, useLocation } from 'react-router-dom'; } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 const footerStyles = {
   backgroundColor: 'White', // Customize your color
   color: 'white',
@@ -38,6 +40,17 @@ const columnStyles = {
 
 const Footer = () => {
 
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, [location]);
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
   return (
     <>    <footer style={{ backgroundColor: 'White', padding: '1rem',marginTop:"120px" }}>
       <Divider sx={{borderTop: "1px solid var(--gray-scale-gray-300, #D0D5DD)",
@@ -55,27 +68,33 @@ const Footer = () => {
       </Grid>
         <Grid item xs={12}  sm={6} md={2} sx={columnStyles}>
           <Typography className='text-font ' sx={{color:'#363565',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,mr:{lg:0,xs:2}}}>Company</Typography>
-            <a 
+            <Link
           // href="/" 
-          className='link '>About Us</a>
-            <a 
-         // href="/" 
-          className='link '>Contact us</a>
-            <a 
-         // href="/" 
-          className='link '>Careers</a>
+          className='link '  sx={{textDecoration:"none"}}>About Us</Link>
+            <Link 
+           onClick={() => handleNavigation('/contact-us')} 
+          className='link ' sx={{textDecoration:"none"}}>Contact us</Link>
+            <Link 
+         onClick={() => handleNavigation('/careers')} 
+          className='link '  sx={{textDecoration:"none"}}>Careers</Link>
         </Grid>
         <Grid  item xs={12} sm={6} md={2} style={columnStyles}>
-          <Typography className='text-font '   sx={{color:'#363565', fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2}}>Legal</Typography>
-            <a 
+          <Typography className='text-font ' sx={{mb:2,color:'#363565', fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2}}  >Legal</Typography>
+            <Link 
+            sx={{color:'#363565', fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,textDecoration:"none"}}
          // href="/" 
-          className='link'>Data Policy</a>
-            <a 
+          className='link'  onClick={() => handleNavigation('/data-policy')} >Data Policy</Link>
+            <Link 
+            sx={{textDecoration:"none"}}
+            
          // href="/" 
-          className='link '>Privacy Policy</a>
-            <a 
+          className='link '  onClick={() => handleNavigation('/privacy-policy')} 
+          sx={{textDecoration:"none"}}
+           >Privacy Policy</Link>
+            <Link 
+            sx={{textDecoration:"none"}}
          // href="/" 
-          className='link'>Cookie Policy</a>
+          className='link'  onClick={() => handleNavigation('/cockie-policy')}  >Cookie Policy</Link>
        
        
         </Grid>
