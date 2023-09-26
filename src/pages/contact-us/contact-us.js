@@ -55,7 +55,7 @@ sx={{color: '#8155FF',
     fontWeight: 700,
     lineHeight: '72px', 
     letterSpacing: '-1.2px',
-    textAlign:"center"}}>Contact Us</Typography>
+    textAlign:"center"}}>Delegate Account</Typography>
 </Grid>
 </Grid>
       </Container>
