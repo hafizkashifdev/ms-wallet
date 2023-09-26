@@ -3,6 +3,7 @@ import { Box, Container, Grid, InputAdornment, TextField, Typography } from '@mu
 import searcicon from "../../assets/offers/searchicon.svg"
 import ButtonList from './button-list/button-list'
 import TrendingCard from './trending-card/trending-card'
+import saleimg from "../../assets/offers/sale.svg"
 
 
 const Offers = () => {
@@ -53,10 +54,10 @@ const Offers = () => {
 </Grid>
     </Grid>
     </Container>
-    <Container maxWidth="xl">
+    
       <ButtonList/>
-    </Container>
-    <Container>
+    
+    <Container maxWidth="lg">
     <Typography
   className='text-font'
   sx={{
@@ -73,13 +74,13 @@ const Offers = () => {
   Here’s what’s Trending <span style={{ color: "#8155FF" }}>Today.</span>
 </Typography>
 <Grid container >
-<Grid item xs={12}> 
-
+<Grid item xs={12} sx={{ mt:"60px",}}> 
+<TrendingCard />
 </Grid>
 </Grid>
     </Container>
 
-    {/* <TrendingCard sale="50% OFF" /> */}
+    
     </>
   )
 }
