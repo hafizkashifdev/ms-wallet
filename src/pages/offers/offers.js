@@ -69,7 +69,7 @@ const Offers = () => {
     color: "#2F2F2F",
     textAlign:"center",
     mt:"98px",
-    // fontFamily: "Outfit", // Uncomment this line if you want to set a specific font family
+    // fontFamily: "Outfit", 
     fontSize: "48px",
     fontStyle: "normal",
     fontWeight: 700,
@@ -87,68 +87,70 @@ const Offers = () => {
 
     <Container maxWidth="lg" sx={{mt:20}}>
 <Grid container> 
-<Grid item xs={10} sx={{ bgcolor: "#3DA9F3", borderRadius: "35px", position: 'relative' }}>
-      <Box sx={{ ml: "48px", my: "36px" }}>
-        <Typography
-          className='text-font'
-          sx={{
-            color: 'var(--White, #FFF)',
-            fontSize: '48px',
-            fontWeight: 700,
-            lineHeight: 'normal',
-          }}
-        >
-          End Of Summer Sale!
-        </Typography>
-        <Typography
-          className='text-font'
-          sx={{
-            color: 'var(--White, #FFF)',
-            fontSize: '18px',
-            fontWeight: 400,
-            lineHeight: 'normal',
-            mt: "16px"
-          }}
-        >
-          Get ready for incredible savings! Enjoy up to a whopping 50% discount on a wide <br />range of home items, experiences, hotels, and more! Shop and save today!
-        </Typography>
-        <Button
-          variant="contained"
-          sx={{
-            display: 'flex',
-            width: '144px',
-            padding: '10px',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: '10px',
-            borderRadius: '30px',
-            bgcolor: "transparent",
-            border: '1px solid #FFF',
-            mt: "24px",
-            textTransform: 'capitalize',
-            '&:hover': {
-              bgcolor: '#796EFF',
-              color: '#FFF',       
-            },
-          }}
-        >
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            Shop Now
-          </Box>
-        </Button>
+<Grid item sm={10} xs={12} sx={{ bgcolor: "#3DA9F3", borderRadius: "35px", position: 'relative' }}>
+<Box sx={{ ml: {lg:"48px",xs:"0px"}, my: "36px", zIndex: 1, position: 'relative',px:{lg:0,xs:2} }}>
+    <Typography
+      className='text-font'
+      sx={{
+        color: 'var(--White, #FFF)',
+        fontSize: '48px',
+        fontWeight: 700,
+        lineHeight: 'normal',
+      }}
+    >
+      End Of Summer Sale!
+    </Typography>
+    <Typography
+      className='text-font'
+      sx={{
+        color: 'var(--White, #FFF)',
+        fontSize: '18px',
+        fontWeight: 400,
+        lineHeight: 'normal',
+        mt: "16px"
+      }}
+    >
+      Get ready for incredible savings! Enjoy up to a whopping 50% discount on a wide <br />range of home items, experiences, hotels, and more! Shop and save today!
+    </Typography>
+    <Button
+      variant="contained"
+      sx={{
+        display: 'flex',
+        width: '144px',
+        padding: '10px',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: '10px',
+        borderRadius: '30px',
+        bgcolor: "transparent",
+        border: '1px solid #FFF',
+        mt: "24px",
+        textTransform: 'capitalize',
+        '&:hover': {
+          bgcolor: '#796EFF',
+          color: '#FFF',       
+        },
+      }}
+    >
+      <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        Shop Now
       </Box>
-      <Box sx={{ position: 'absolute', right: '-24%', top: '-60%' }}>
-        <img src={summersale} alt="summer img" />
-      </Box>
-    </Grid>
+    </Button>
+  </Box>
+  <Box sx={{ position: 'absolute', right: '-24%', top: '-60%', zIndex: 0,display:{sm:"flex",xs:"none"} }}>
+    <img src={summersale} alt="summer img" />
+  </Box>
+
+</Grid>
+
     <Grid item xs={2} sx={{display:{lg:'flex',xs:"none"}}}>
 
     </Grid>
     <Grid item xs={2} sx={{display:{lg:'flex',xs:"none"}}}>
 
     </Grid>
-    <Grid item xs={10} sx={{ bgcolor: "#F4FBFF", borderRadius: "35px", position: 'relative', mt: "90px" }}>
-      <Box sx={{ position: 'absolute', left: '-10%', top: '-20%',  }}>
+    <Grid item xs={12} lg={10} sx={{ bgcolor: "#F4FBFF", borderRadius: "35px", position: 'relative', mt: "90px" }}>
+      <Box sx={{ position: 'absolute', left: '-10%', top: '-20%', zIndex:0 ,display:{md:"flex",xs:"none"}}}>
         <img src={megaOffers} alt="summer img" style={{  }} />
       </Box>
       <Box
@@ -159,7 +161,9 @@ const Offers = () => {
           width: '100%',
           padding: '36px',
           boxSizing: 'border-box',
-          textAlign:'right'
+          textAlign:{lg:'right',xs:"center"},
+          position: 'relative',
+          zIndex:1
         }}
       >
         <Typography
@@ -188,7 +192,7 @@ Grab this amazing deal: Five tickets for just £22 or get even more value with t
         <Box
   sx={{
     display: 'flex',
-    justifyContent: 'flex-end',
+    justifyContent: {lg:'flex-end',xs:"center"},
   }}
 >
   <Button
@@ -219,8 +223,8 @@ Grab this amazing deal: Five tickets for just £22 or get even more value with t
     {/* // 2nd same seaction */}
 
 
-    <Grid item xs={10} sx={{ bgcolor: "#3DA9F3", borderRadius: "35px", position: 'relative',mt:"80px" }}>
-      <Box sx={{ ml: "48px", my: "36px" }}>
+    <Grid item lg={10} xs={12} sx={{ bgcolor: "#3DA9F3", borderRadius: "35px", position: 'relative',mt:"80px" }}>
+      <Box sx={{ ml: "48px", my: "36px" ,position:"relative",zIndex:1,textAlign:{lg:"left",xs:"none"}}}>
         <Typography
           className='text-font'
           sx={{
@@ -228,6 +232,8 @@ Grab this amazing deal: Five tickets for just £22 or get even more value with t
             fontSize: '48px',
             fontWeight: 700,
             lineHeight: 'normal',
+            textAlign:{lg:"left",xs:"none"}
+
           }}
         >
          Massive Mattress Markdowns
@@ -239,6 +245,7 @@ Grab this amazing deal: Five tickets for just £22 or get even more value with t
             fontSize: '18px',
             fontWeight: 400,
             lineHeight: 'normal',
+            textAlign:{lg:"left",xs:"none"},
             mt: "16px"
           }}
         >
@@ -268,7 +275,7 @@ Grab this amazing deal: Five tickets for just £22 or get even more value with t
           </Box>
         </Button>
       </Box>
-      <Box sx={{ position: 'absolute', right: '-19%', top: '-30%' }}>
+      <Box sx={{ position: 'absolute', right: '-19%', top: '-30%',zIndex:0,display:{lg:'flex',xs:'none'} }}>
         <img src={bedimg} alt="summer img" style={{width:'391px',height:"391px"}}/>
       </Box>
     </Grid>
@@ -278,73 +285,77 @@ Grab this amazing deal: Five tickets for just £22 or get even more value with t
     <Grid item xs={2} sx={{display:{lg:'flex',xs:"none"}}}>
 
     </Grid>
-    <Grid item xs={10} sx={{ bgcolor: "#F4FBFF", borderRadius: "35px", position: 'relative', mt: "90px" }}>
-      <Box sx={{ position: 'absolute', left: '-26%', top: '-55%',  }}>
-        <img src={boximg} alt="summer img" style={{  }} />
-      </Box>
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'flex-end', 
-          flexDirection: 'column', 
-          width: '100%',
-          padding: '36px',
-          boxSizing: 'border-box',
-          textAlign:'right'
-        }}
-      >
-        <Typography
-          className='text-font'
-          sx={{
-            color: '#3CA7EF',
-            fontSize: '48px',
-            fontWeight: 700,
-            lineHeight: 'normal',
-          }}
-        >
-        Restock, Refresh & Save!
-        </Typography>
-        <Typography
-          className='text-font'
-          sx={{
-            color: 'var(--gray-scale-gray-500, #667085)',
-            fontSize: '18px',
-            fontWeight: 400,
-            lineHeight: 'normal',
-            mt: "16px"
-          }}
-        >Discover your must-have post-holiday essentials! Find everything you need to ease <br/>back into your routine and make the most of your post-vacation life.
-        </Typography>
-        <Box
-  sx={{
-    display: 'flex',
-    justifyContent: 'flex-end',
-  }}
->
-  <Button
-    variant="contained"
+ <Grid item lg={10} xs={12} sx={{ bgcolor: "#F4FBFF", borderRadius: "35px", position: 'relative', mt: "90px" }}>
+  <Box
     sx={{
-      width: '144px',
-      padding: '10px',
-      gap: '10px',
-      borderRadius: '30px',
-      bgcolor: 'transparent',
-      border: '1px solid #3DA9F3',
-      mt: '24px',
-      textTransform: 'capitalize',
-      color:"#3DA9F3",
-      '&:hover': {
-        bgcolor: '#796EFF', 
-        color: '#FFF',       
-      },
+      display: 'flex',
+      justifyContent: {lg:'lex-end',xs:"center"},
+      flexDirection: 'column',
+      width: '100%',
+      padding: '36px',
+      boxSizing: 'border-box',
+      textAlign: {lg:'right',xs:'center'},
+      zIndex: 1, 
+      position:"relative"
     }}
   >
-    Shop Now
-  </Button>
-</Box>
+    <Typography
+      className='text-font'
+      sx={{
+        color: '#3CA7EF',
+        fontSize: '48px',
+        fontWeight: 700,
+        lineHeight: 'normal',
+      }}
+    >
+      Restock, Refresh & Save!
+    </Typography>
+    <Typography
+      className='text-font'
+      sx={{
+        color: 'var(--gray-scale-gray-500, #667085)',
+        fontSize: '18px',
+        fontWeight: 400,
+        lineHeight: 'normal',
+        mt: "16px"
+      }}
+    >
+      Discover your must-have post-holiday essentials! Find everything you need to ease <br />back into your routine and make the most of your post-vacation life.
+    </Typography>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: {lg:'flex-end',xs:'center'},
+      }}
+    >
+      <Button
+        variant="contained"
+        sx={{
+          width: '144px',
+          padding: '10px',
+          gap: '10px',
+          borderRadius: '30px',
+          bgcolor: 'transparent',
+          border: '1px solid #3DA9F3',
+          mt: '24px',
+          textTransform: 'capitalize',
+          color: "#3DA9F3",
+          '&:hover': {
+            bgcolor: '#796EFF',
+            color: '#FFF',
+          },
+        }}
+      >
+        Shop Now
+      </Button>
+    </Box>
+  </Box>
+  <Box sx={{ position: 'absolute', left: '-26%', top: '-55%', zIndex: 0, display: { md: "flex", xs: "none" } }}>
+    <img src={boximg} alt="summer img" style={{}} />
+  </Box>
+</Grid>
 
-      </Box>
-    </Grid>
+
 </Grid>
     </Container>
 
@@ -361,6 +372,7 @@ Grab this amazing deal: Five tickets for just £22 or get even more value with t
     fontStyle: 'normal',
     fontWeight: 700,
     lineHeight: 'normal',
+    textAlign:{lg:"left",xs:'center'}
   }}
 >
  <span style={{color:"var(--main-primary, #363565)"}}>Popular on</span>  Membership Wallet.
@@ -376,7 +388,8 @@ Grab this amazing deal: Five tickets for just £22 or get even more value with t
     fontStyle: 'normal',
     fontWeight: 400,
     lineHeight: '24px', 
-    mt:"16px"
+    mt:"16px",
+    textAlign:{lg:"left",xs:'center'}
   }}
 >
   Deals you don’t want to miss.
