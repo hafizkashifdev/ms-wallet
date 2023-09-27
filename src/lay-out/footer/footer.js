@@ -72,12 +72,12 @@ const Footer = () => {
       <Link  onClick={() => handleNavigation('/')} style={{ textDecoration: 'none' ,cursor:"pointer"}}>
                 <img src={flogo} alt="foter logo" />
               </Link>
-       <Typography className='text-font' sx={{color:'#4E4B66', fontSize:'14px',fontWeight:500,fontStyle:'normal',textTransform:'capitalize',mt:2}}>
+       <Typography className='text-font' sx={{color:'#4E4B66', fontSize:'14px',fontWeight:400,fontStyle:'normal',textTransform:'capitalize',mt:2}}>
        Copyrights © 2023 All Rights Reserved by Membership Wallet
        </Typography>
       </Grid>
         <Grid item xs={12}  sm={6} md={2} sx={columnStyles}>
-          <Typography className='text-font ' sx={{color:' #4E4B66',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,mr:{lg:0,xs:2}}}>Company</Typography>
+          <Typography className='text-font ' sx={{color:' #363565',fontSize:'18px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,mr:{lg:0,xs:2}}}>Company</Typography>
             <Link
           // href="/" 
           className="text-font link"  sx={{textDecoration:"none",mt:"20px",color:"#4E4B66"}}>About Us</Link>
@@ -89,7 +89,7 @@ const Footer = () => {
          className="text-font link"  sx={{textDecoration:"none",mt:"20px",color:"#4E4B66"}}>Careers</Link>
         </Grid>
         <Grid  item xs={12} sm={6} md={2} style={columnStyles}>
-          <Typography className='text-font ' sx={{mb:2,color:' #4E4B66', fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',}}  >Legal</Typography>
+          <Typography className='text-font ' sx={{mb:2,color:'#363565', fontSize:'18px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',}}  >Legal</Typography>
             <Link 
           
          // href="/" 
@@ -110,7 +110,7 @@ const Footer = () => {
        
         </Grid>
         <Grid item xs={12} sm={6} md={2} style={columnStyles}>
-        <Typography className='text-font'  sx={{color:'#363565',fontSize:'15px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',}}>
+        <Typography className='text-font ' sx={{color:' #363565',fontSize:'18px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',}}>
     Install App
   </Typography>
   <div className='appIcons'>

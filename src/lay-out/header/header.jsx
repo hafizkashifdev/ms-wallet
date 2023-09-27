@@ -75,18 +75,19 @@ const useStyles = makeStyles(() => ({
   },
   drawerContainer: {},
   label: {
-    color: '#475467',
+    color: 'var(--gray-scale-gray-600, #475467)',
     // border:"1px solid black",
 
-    fontFamily: "Open Sans",
+    // fontFamily: "Open Sans",
     fontSize: "16px",
     // fontStyle: "normal",
-    fontWeight: 600,
+    fontWeight: 500,
     lineHeight: "normal",
-    transition: "all 0.3s",
+    // transition: "all 0.3s",
     textDecoration: "none",
     textTransform: "capitalize",
     display: "inline-block",
+    lineheight:"24px",
   },
   labelHover: {
     color: "#6938EF",
@@ -264,7 +265,7 @@ export default function Header() {
   color: 'var(--primary-primary-500, #7A5AF8)',
   fontSize: '14px',
   fontStyle: 'normal',
-  fontWeight: 600,
+  fontWeight: 500,
   lineHeight: '170%',
   mt:{lg:0,xs:2}
 
@@ -276,16 +277,18 @@ export default function Header() {
       Partner with us
     </Button>
       <Button
+      className="text-font "
         sx={{ borderRadius: '8px',
+
         background: 'linear-gradient(103deg, #9672FE 0%, #6A35FF 100%)',
-        boxShadow: '0px 17px 22px -10px rgba(24, 8, 70, 0.10)',padding:"10px 20px",color:"#ffffff" ,textTransform:'capitalize'}}
+        boxShadow: '0px 17px 22px -10px rgba(24, 8, 70, 0.10)',padding:"10px 20px",color:"#ffffff" ,textTransform:'capitalize',fontWeight:500}}
         // component={RouterLink}
         // to="/login"
       >
      Try For Free   
       </Button>
       <Button
-        sx={{ color: "#344054",fontSize:"16px", mb:{lg:0,xs:2},textDecoration:'underline' ,textTransform:'capitalize',fontStyle:'normal',fontWeight:500,background: "transparent",
+        sx={{ color: "var(--gray-scale-gray-700, #344054)",fontSize:"16px", mb:{lg:0,xs:2},textDecoration:'underline' ,textTransform:'capitalize',fontStyle:'normal',fontWeight:500,background: "transparent",
         '&:hover': {
           backgroundColor: 'transparent',
         },}}
@@ -309,7 +312,7 @@ export default function Header() {
             style: { textDecoration: "none" },
           }}
         >
-          <MenuItem sx={{ color: "#BEC2C1" }}>{label}</MenuItem>
+          <MenuItem className="text-font" >{label}</MenuItem>
         </Link>
         {/* <Divider sx={{ backgroundColor: "#BEC2C1" ,width:"100%"}} />  */}
       </div>

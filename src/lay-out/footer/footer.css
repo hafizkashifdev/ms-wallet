@@ -13,15 +13,15 @@
   
 
   .link {
-    color: #4E4B66;
-    font-family: Outfit;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
+    /* color: #4E4B66; */
+    /* font-family: Outfit; */
+    /* font-size: 14px; */
+    /* font-weight: 500; */
+    /* font-style: normal; */
     text-transform: capitalize;
     margin-bottom: 0.5rem;
     margin-top: 10px;
-    text-decoration: none;
+    /* text-decoration: none; */
     cursor: pointer;
   }
   /* Keep your existing styles */

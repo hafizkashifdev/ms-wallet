@@ -28,6 +28,7 @@ const Offers = () => {
 >
   <TextField
     fullWidth
+    placeholder="Search"
     sx={{
       width: '100%',
       maxWidth: '682px',
