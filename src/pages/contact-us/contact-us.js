@@ -39,20 +39,25 @@ const ContactUs = () => {
 
   return (
     <>
-
+ <Container maxWidth="xxl">
+<Box sx={{display:{lg:"flex",xs:"none"},pr:"50px",position:'relative',}}>
+ <img src={condot} alt="img" style={{marginLeft:"auto",position:"absolute",right:70,top:170}}>
+  </img>
+ </Box>
+    </Container>
 
     <div style={connectdivStyle}>
    
       <Container maxWidth="lg">
 
 <Grid container >
-<Grid item xs={12} sx={{mt:"140px"}}>
+<Grid item xs={12} sx={{mt:"170px"}}>
 <Typography variant="h6" 
  className='text-font'
 sx={{color: '#8155FF',
     fontSize: '60px',
     fontStyle: 'normal',
-    fontWeight: 700,
+    fontWeight: 600,
     lineHeight: '72px', 
     letterSpacing: '-1.2px',
     textAlign:"center"}}>Contact Us</Typography>

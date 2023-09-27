@@ -324,7 +324,7 @@ sx={{
 <Button
   sx={{
     borderRadius: '8px',
-    background: 'linear-gradient(103deg, #9672FE 0%, #6A35FF 100%)',
+    background: '#8155FF',
     boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)',
     padding: "14px 24px",
     color: "#ffffff",
@@ -332,6 +332,9 @@ sx={{
     mt: "36px",
     mb:{lg:"82px",xs:"2px"},
     textAlign: {lg:"left",xs:"center"},
+    '&:hover': {
+      background: '#8155FF',
+    },
 
   }}
   onClick={getInTouchHandler}

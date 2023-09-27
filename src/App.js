@@ -10,6 +10,9 @@ import Layout from "./lay-out/lay-out";
 import CookiePolicy from "./pages/cookie-policy/cookie-policy";
 import DataPolicy from "./pages/data-policy/data-policy";
 import PrivacyPolicy from "./pages/Privacy-policy/Privacy-policy";
+import PartnerWithUs from "./pages/partner-with-us/partner-with-us";
+import DelegateAccount from "./pages/delegate-account/delegate-account";
+import AboutUs from "./pages/about-us/about-us";
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
           <Route path="/cockie-policy" element={<CookiePolicy />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="/data-policy" element={<DataPolicy />} />
+          <Route path="/partner-with-us" element={<PartnerWithUs/>} />
+          <Route path="/delegate-account" element={<DelegateAccount/>} />
+          <Route path="/about-us" element={<AboutUs/>} />
         </Routes>
       </Layout>
     </Router>

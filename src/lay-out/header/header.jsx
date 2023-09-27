@@ -272,6 +272,8 @@ export default function Header() {
 }}
   
   className="text-font"
+
+  onClick={() => handleNavigation('/partner-with-us')}
   
   >
       Partner with us
