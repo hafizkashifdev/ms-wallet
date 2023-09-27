@@ -37,6 +37,15 @@ const columnStyles = {
   
 };
 
+const socialMediaLinks = [
+  'https://www.facebook.com',
+  'https://www.instagram.com',
+  'https://www.linkedin.com',
+  'https://twitter.com',
+  'https://www.youtube.com',
+];
+
+
 
 const Footer = () => {
 
@@ -117,18 +126,20 @@ const Footer = () => {
       <Divider sx={{mt:4,borderTop: "1px solid var(--gray-scale-gray-300, #D0D5DD)",
   backGround: "#D9DBE9"}}/>
       
-      <Grid  className="image-grid-container" sx={{ display: 'flex' }}>
-          {images.map((image, index) => (
-            <Grid item xs={6} sm={4} md={1} key={index} sx={{ display: 'flex' ,mt:2}}>
-              <img
-                src={image}
-                alt={`Image ${index + 1}`}
-                className="grid-image"
-                style={{ width: '30px', height: '30px', margin: '8px' }}
-              />
-            </Grid>
-          ))}
-        </Grid>
+      <Grid className="image-grid-container" sx={{ display: 'flex' }}>
+  {images.map((image, index) => (
+    <Grid item xs={6} sm={4} md={1} key={index} sx={{ display: 'flex', mt: 2 }}>
+      <a href={socialMediaLinks[index]} target="_blank" rel="noopener noreferrer">
+        <img
+          src={image}
+          alt={`Image ${index + 1}`}
+          className="grid-image"
+          style={{ width: '30px', height: '30px', margin: '8px' }}
+        />
+      </a>
+    </Grid>
+  ))}
+</Grid>
       
       </Container>
 

@@ -1,0 +1,15 @@
+/* CSS */
+.custom-button {
+    display: flex;
+    width: 144px;
+    padding: 10px;
+    justify-content: flex-end; /* Align text to the right within the button */
+    align-items: center; /* Vertically center the text within the button */
+    gap: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    margin-top: 24px;
+    text-transform: capitalize;
+  }
+  
