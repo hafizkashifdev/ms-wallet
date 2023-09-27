@@ -27,7 +27,7 @@ const headersData = [
   },
   {
     label: "Offers ",
-    // href: "/offers",
+    href: "/offers",
   },
   {
     label: "Business",

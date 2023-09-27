@@ -108,22 +108,7 @@ const PopularCards  = () => {
               }}
               src={card.img}
             />
-            <SvgIcon
-              style={{
-                width: '79.714px',
-                height: '39.886px',
-                fill: 'rgba(242, 188, 2, 0.80)',
-                strokeWidth: '0.831px',
-                stroke: 'rgba(255, 255, 255, 0.30)',
-                filter: 'drop-shadow(0px 6.6476px 19.9429px rgba(0, 0, 0, 0.40))',
-                backdropFilter: 'blur(4.1548px)',
-                position: 'absolute',
-                top: '2px',
-                right: '2px',
-              }}
-            >
-              <polygon points="16,0 14.29,4.11 10,4.11 8.29,0 6,0 10,8 14.29,8"></polygon>
-            </SvgIcon>
+            
             <Box sx={{ position: 'relative' }}>
               <Typography
                 variant="body2"
