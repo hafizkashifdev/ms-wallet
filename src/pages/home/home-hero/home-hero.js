@@ -55,6 +55,7 @@ const HomeHero = () => {
 >
   <TextField
     fullWidth
+    placeholder="Enter Postal Code"
     sx={{
       width: '100%',
       maxWidth: '539px',
