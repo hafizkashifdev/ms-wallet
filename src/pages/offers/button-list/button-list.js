@@ -80,7 +80,13 @@ const buttons = [
       setAnchorEls(newAnchorEls);
       setSelectedButton(null);
     };
-  
+    const scrollLeft = () => {
+      if (buttonContainerRef.current) {
+        const currentScrollLeft = buttonContainerRef.current.scrollLeft;
+        const scrollDistance = 200;
+        buttonContainerRef.current.scrollLeft = currentScrollLeft - scrollDistance; // Scroll to the left
+      }
+    };
     const isPopoverOpen = selectedButton !== null;
   
     const handleMouseDown = (event) => {
@@ -122,6 +128,18 @@ const buttons = [
             position: 'relative', 
           }}
         >
+           <IconButton
+  onClick={scrollLeft} // Use the scrollLeft function for left arrow
+  style={{
+    backgroundColor: 'var(--untitled-others-blue-light-blue-light-300, #7CD4FD)', 
+    borderRadius: '6px', 
+    marginRight: '10px',
+    transform: 'rotate(180deg)', // Rotate the icon 180 degrees
+  }}
+>
+  <img src={righticon} alt='left-icon' style={{ width: '24px', height: '24px', }} />
+</IconButton>
+
           {/* Button List */}
           <Box
             ref={buttonContainerRef}
@@ -139,7 +157,8 @@ const buttons = [
              
             }}
           >
-            <Button
+          
+            {/* <Button
           
           
           className="text-font"
@@ -164,7 +183,7 @@ const buttons = [
           }}
         >
           All
-        </Button>
+        </Button> */}
             {buttons.map((button, index) => (
               <Box
                 key={index}

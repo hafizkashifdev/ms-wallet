@@ -55,7 +55,7 @@ sx={{color: '#8155FF',
     fontWeight: 700,
     lineHeight: '72px', 
     letterSpacing: '-1.2px',
-    textAlign:"center"}}>Delegate Account</Typography>
+    textAlign:"center"}}>Contact Us</Typography>
 </Grid>
 </Grid>
       </Container>
@@ -401,7 +401,8 @@ xs={12}
 
               <Grid item xs={12} gap={2} sx={{ textAlign: "center" ,mt:"48px"}}>
                 <Typography
-                className='gilroy-font '
+            
+            className="text-font "
                   sx={{
                     // fontFamily:"Gilroy-Medium",
                     fontSize: "18px",
@@ -410,7 +411,7 @@ xs={12}
                 >
                   Do you have some questions about Membership Wallet?  Visit our{" "}
                   <span
-                  className='gilroy-font '
+                  className="text-font "
                     style={{
                       color: "#916BFE",
                       fontSize: "18px",

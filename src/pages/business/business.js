@@ -13,6 +13,7 @@ import phone from "../../assets/business/phone.gif"
 import map from "../../assets/business/mp.png"
 import mapbg from "../../assets/business/fmapbg.png"
 import "./business.css"
+import { useNavigate } from 'react-router-dom';
 
 const cardData = [
   {
@@ -59,6 +60,14 @@ const cardData = [
 // };
 
 const Business = () => {
+
+  const navigate=useNavigate();
+
+   const getInTouchHandler=()=>{
+
+   navigate('/contact-us')
+   }
+
   return (
   <>
    <Container maxWidth="xxl">
@@ -323,7 +332,9 @@ sx={{
     mt: "36px",
     mb:{lg:"82px",xs:"2px"},
     textAlign: {lg:"left",xs:"center"},
+
   }}
+  onClick={getInTouchHandler}
 >
   Get in touch
 </Button>
