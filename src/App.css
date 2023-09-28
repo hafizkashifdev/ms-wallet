@@ -17,3 +17,9 @@
     height: 1rem; /* Adjust the height as needed */
   }
 }
+img {
+  user-drag: none;
+  -moz-user-drag: none;
+  -webkit-user-drag: none;
+}
+

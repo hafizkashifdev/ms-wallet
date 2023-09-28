@@ -296,7 +296,7 @@ export default function Header() {
         },}}
         className="text-font"
         // component={RouterLink}
-        // to="/login"
+        onClick={() => handleNavigation('/sign-in')}
       >
  Login
       </Button>

@@ -24,11 +24,21 @@ import insta from "../../../assets/auth/icon/insta.svg";
 import fb from "../../../assets/auth/icon/fb.svg";
 import lin from "../../../assets/auth/icon/in.svg";
 import yout from "../../../assets/auth/icon/yout.svg";
+import { useNavigate } from "react-router-dom";
+
 
 
 
 
 const SignUp = () => {
+
+  const navigate=useNavigate();
+
+const navigationHandler=(path)=>{
+  navigate(path);
+}
+
+
   return (
     <Container maxWidth="xl">
       <Grid container>
@@ -317,7 +327,7 @@ const SignUp = () => {
         mt: '16px'
       }}
     >
-      Already have an account?<span style={{ color: "#8155FF", cursor: 'pointer' }}> Sign In</span>
+      Already have an account?<span style={{ color: "#8155FF", cursor: 'pointer' }} onClick={()=>navigationHandler('/sign-in')}> Sign In</span>
     </Typography>
   </Box>
 </Grid>

@@ -404,7 +404,7 @@ xs={12}
   </Button>
 </Grid>
 
-              <Grid item xs={12} gap={2} sx={{ textAlign: "center" ,mt:"48px"}}>
+              {/* <Grid item xs={12} gap={2} sx={{ textAlign: "center" ,mt:"48px"}}>
                 <Typography
             
             className="text-font "
@@ -428,7 +428,7 @@ xs={12}
                   to find the
                   <br /> list of most important questions and answers for you.{" "}
                 </Typography>
-              </Grid>
+              </Grid> */}
               {/* <hr
                 style={{ width: "50%", marginLeft: "25%", textAlign: "left" }}
               /> */}
@@ -474,10 +474,10 @@ xs={12}
     container
   
   >
-    <Grid >
+    {/* <Grid >
       <img src={FaxIcon} alt="" />
-    </Grid>
-    <Grid item>
+    </Grid> */}
+    {/* <Grid item>
       <Typography
       className='text-font'
         sx={{
@@ -499,7 +499,7 @@ xs={12}
       >
         +44 20 3885 4872
       </Typography>
-    </Grid>
+    </Grid> */}
   </Grid>
   <Grid
     item
