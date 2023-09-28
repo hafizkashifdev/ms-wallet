@@ -79,7 +79,7 @@ const Footer = () => {
         <Grid item xs={12}  sm={6} md={2} sx={columnStyles}>
           <Typography className='text-font ' sx={{color:' #363565',fontSize:'18px',fontWeight:700,fontStyle:'normal',textTransform:'capitalize',mb:2,mr:{lg:0,xs:2}}}>Company</Typography>
             <Link
-          // href="/" 
+          onClick={() => handleNavigation('/about-us')} 
           className="text-font link"  sx={{textDecoration:"none",mt:"20px",color:"#4E4B66"}}>About Us</Link>
             <Link 
            onClick={() => handleNavigation('/contact-us')} 

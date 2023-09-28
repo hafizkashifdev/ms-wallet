@@ -4,6 +4,7 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import partnerimg from "../../assets/about-us/ab.png";
 import imgmapword from "../../assets/about-us/nbnhj.png";
 import { Link, useNavigate } from 'react-router-dom';
+import AboutCards from './about-cards/about-cards';
 
 const AboutUs = () => {
     const navigate = useNavigate();
@@ -65,19 +66,20 @@ mt:"8px",
    Introduction
   </Typography>
   <Typography className='text-font'
-    sx={{
-      color: 'var(--secondary-secondary-600, #58506C)',
-      fontSize: '20px',
-      fontStyle: 'normal',
-      fontWeight: 400,
-      lineHeight: '30px',
-      display:{lg:"flex",xs:"none"},
-      mt: "16px",
-      textAlign: { lg: "left", xs: 'center', },
-    }}
-  >
-   At ,we are dedicated to simplifying your life<br />by revolutionising the way you manage loyalty cards and <br /> Pmemberships. Our centralised platform provides a seamless  <br />digital solution that eliminates the need for physical cards and <br /> offers a hassle-free way to track and access rewards from you<br/>favourite retailers.
-  </Typography>
+  sx={{
+    color: 'var(--secondary-secondary-600, #58506C)',
+    fontSize: '20px',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '30px',
+    display: { lg: "flex", xs: "none" },
+    mt: "16px",
+    textAlign: "left",
+  }}
+>
+  At <span style={{ color: "#8155FF",  display: 'contents' }}>Membership Wallet</span>, we are dedicated to simplifying your life<br />by revolutionising the way you manage loyalty cards and <br /> memberships. Our centralised platform provides a seamless <br />digital solution that eliminates the need for physical cards and <br /> offers a hassle-free way to track and access rewards from your<br />favorite retailers.
+</Typography>
+
   <Typography className='text-font'
     sx={{
         display:{lg:"none",xs:"flex"},
@@ -92,7 +94,7 @@ mt:"8px",
       whiteSpace: 'normal',
     }}
   >
-  At <span style={{color:"#8155FF"}}>Membership Wallet</span>, we are dedicated to simplifying your life by revolutionising the way you manage loyalty cards and memberships. Our centralised platform provides a seamless digital solution that eliminates the need for physical cards and offers a hassle-free way to track and access rewards from your favourite retailers.
+  At<span style={{ color: "#8155FF",  display: 'contents'  }}>Membership Wallet</span>,we are dedicated to simplifying your life by revolutionising the way you manage loyalty cards and memberships. Our centralised platform provides a seamless digital solution that eliminates the need for physical cards and offers a hassle-free way to track and access rewards from your favourite retailers.
   </Typography>
   
  
@@ -117,14 +119,14 @@ mt:"8px",
 
 <Container maxWidth="xl">
   <Grid container >
-  <Grid item lg={6} xs={12} sx={{ mt: '120px', display: {lg:'flex',xs:'none'} , }}>
+  <Grid item lg={6} xs={12} sx={{ mt: '120px', display: { lg: 'flex', xs: 'none' }, justifyContent: { lg: 'flex-start', xs: 'center' ,p:0} }}>
   <img
     src={imgmapword}
     alt="partners"
     style={{
       width: '100%',
       maxWidth: '640px',
-      height: '570px',
+      minheight: '570px',
       flexShrink: 0,
     }}
   />
@@ -203,6 +205,15 @@ We are a passionate, creative team dedicated to making a difference.
 </Grid>
    </Grid>
       </Container>
+
+      <Container maxWidth="xl">
+   <Grid container>
+<Grid item xs={12} sx={{ mt:"72px"}}>
+<AboutCards/>
+</Grid>
+   </Grid>
+      </Container>
+
    
    </>
   )
