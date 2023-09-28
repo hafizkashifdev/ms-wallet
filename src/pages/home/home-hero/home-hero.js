@@ -5,13 +5,13 @@ import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from "../../../assets/icon/search-normal.svg";
 import apple from "../../../assets/home/apple-btn.svg";
 import play from "../../../assets/home/play-btn.svg";
-import homeheroimg from "../../../assets/home/hero-discount.svg";
+import homeheroimg from "../../../assets/home/homepng.png";
 import rightarrow from "../../../assets/home/right-arrow.svg";
 
 const HomeHero = () => {
   return (
     <Container maxWidth="xl">
-      <Grid container sx={{ mt: { lg: "270px", sm: "170px", xs: "70px" } }}>
+      <Grid container sx={{ mt: { lg: "230px", sm: "170px", xs: "70px" } }}>
         <Grid item md={5} xs={12} sx={{ position: 'relative' }}>
           <Typography
             sx={{

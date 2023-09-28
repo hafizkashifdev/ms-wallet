@@ -285,7 +285,7 @@ export default function Header() {
         background: 'linear-gradient(103deg, #9672FE 0%, #6A35FF 100%)',
         boxShadow: '0px 17px 22px -10px rgba(24, 8, 70, 0.10)',padding:"10px 20px",color:"#ffffff" ,textTransform:'capitalize',fontWeight:500}}
         // component={RouterLink}
-        // to="/login"
+        onClick={() => handleNavigation('/sign-up')}
       >
      Try For Free   
       </Button>
