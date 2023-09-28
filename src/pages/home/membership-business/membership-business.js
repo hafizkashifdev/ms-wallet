@@ -54,7 +54,7 @@ const MembershipBusiness = () => {
         </Typography>
       </Grid>
       
-      <Grid xs={2}>
+      <Grid  item xs={2}>
 
       </Grid>
       <Grid item xl={6} xs={10}>
@@ -124,7 +124,7 @@ const MembershipBusiness = () => {
         </Typography>
       </Grid>
       
-      <Grid xs={2}>
+      <Grid item xs={2}>
 
       </Grid>
       <Grid item xs={12}>

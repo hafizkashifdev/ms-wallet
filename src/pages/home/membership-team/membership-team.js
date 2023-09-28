@@ -90,7 +90,7 @@ Join us today and embark on a journey filled with possibilities. Together, we'll
 </Button>
 </Box>
       </Grid>
-      <Grid xs={2}>
+      <Grid item xs={2}>
 
       </Grid>
      
@@ -169,7 +169,7 @@ Join us today and embark on a journey filled with possibilities. Together, we'll
 </Button>
 </Box>
       </Grid>
-      <Grid xs={2}>
+      <Grid item xs={2}>
 
       </Grid>
      
