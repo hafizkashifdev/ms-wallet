@@ -5,6 +5,7 @@ import partnerimg from "../../assets/about-us/ab.png";
 import imgmapword from "../../assets/about-us/nbnhj.png";
 import { Link, useNavigate } from 'react-router-dom';
 import AboutCards from './about-cards/about-cards';
+import mapbg from "../../assets/about-us/missbg.svg"
 
 const AboutUs = () => {
     const navigate = useNavigate();
@@ -119,18 +120,32 @@ mt:"8px",
 
 <Container maxWidth="xl">
   <Grid container >
-  <Grid item lg={6} xs={12} sx={{ mt: '120px', display: { lg: 'flex', xs: 'none' }, justifyContent: { lg: 'flex-start', xs: 'center' ,p:0} }}>
+  <Grid item lg={6} xs={12} sx={{
+  mt: { lg: "40px", sm: "60px", xs: "10px" },
+  p: 2,
+  display: { lg: 'flex', xs: 'none' },
+  justifyContent: 'flex-start', // Align content to the left horizontally
+  alignItems: 'center', // Center content vertically
+  position: 'relative',
+}}>
   <img
     src={imgmapword}
     alt="partners"
     style={{
       width: '100%',
       maxWidth: '640px',
-      minheight: '570px',
+      minHeight: '570px',
       flexShrink: 0,
+      position: 'relative',
+      zIndex: 1,
+      background: `url(${mapbg}) no-repeat left center`, // Set background image on the image
+      backgroundSize: 'cover',
     }}
   />
 </Grid>
+
+
+
 
     <Grid item lg={6} xs={12} sx={{ mt: {lg:"310px",xs:"60px"}}}>
       <Typography className='text-font'
@@ -162,18 +177,30 @@ mt:"8px",
 Our mission is to empower individuals like you to make the most of their loyalty programs in the digital age. We believe that managing your memberships and enjoying the benefits should be effortless, and that's why we've created Membership Wallet. 
       </Typography>
     </Grid>
-    <Grid item lg={6} xs={12} sx={{ mt: {lg:"40px",sm:"60px",xs:"10px"},p:2,  display: {lg:'none',xs:'flex'} ,justifyContent: {lg:'left',xs:"center"}, alignItems: {lg:'left',xs:"center"} }}>
+    <Grid item lg={6} xs={12} sx={{
+  mt: { lg: "40px", sm: "60px", xs: "10px" },
+  p: 2,
+  display: {lg:'none',xs:'flex'},
+  justifyContent: 'center', // Center content horizontally
+  alignItems: 'center', // Center content vertically
+  position: 'relative',
+}}>
   <img
     src={imgmapword}
     alt="partners"
     style={{
       width: '100%',
       maxWidth: '640px',
-      height: '570px',
+      minHeight: '570px',
       flexShrink: 0,
+      position: 'relative',
+      zIndex: 1,
+      background: `url(${mapbg}) no-repeat center center`, // Set background image on the image and center it
+      backgroundSize: 'cover',
     }}
   />
 </Grid>
+
   </Grid>
 </Container>
 
