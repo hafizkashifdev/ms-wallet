@@ -13,10 +13,12 @@ import PrivacyPolicy from "./pages/Privacy-policy/Privacy-policy";
 import PartnerWithUs from "./pages/partner-with-us/partner-with-us";
 import DelegateAccount from "./pages/delegate-account/delegate-account";
 import AboutUs from "./pages/about-us/about-us";
+import SignUp from "./pages/auth/sign-up/sign-up";
 
 function App() {
   return (
     <Router>
+       {/* <Route path="/sign-up" element={<SignUp/>} /> */}
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,8 +32,12 @@ function App() {
           <Route path="/partner-with-us" element={<PartnerWithUs/>} />
           <Route path="/delegate-account" element={<DelegateAccount/>} />
           <Route path="/about-us" element={<AboutUs/>} />
+          
         </Routes>
       </Layout>
+      <Routes>
+      
+      </Routes>
     </Router>
   );
 }
